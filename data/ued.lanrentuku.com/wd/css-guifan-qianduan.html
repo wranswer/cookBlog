@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>前端CSS规范整理_前端开发_懒人图库</title>
+<meta name="keywords" content="CSS规范,前端,CSS命名规则,前端开发" />
+<meta name="description" content="一、文件规范 1、文件均归档至约定的目录中。 具体要求通过豆瓣的CSS规范进行讲解： 所有的CSS分为两大类：通用类和业务类。通用的CSS文件，放在如下目录中：" />
+<link rel="stylesheet" type="text/css" href="../../img.lanrentuku.com/img/css/a.css">
+<script src="../../libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../img.lanrentuku.com/img/js/a.js"></script>
+<link rel="stylesheet" type="text/css" href="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css"/>
+<script type="text/javascript" charset="gbk" src="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+</head>
+
+<body>
+<div class="topbg">
+	<div class="topnav">
+		<div class="l">欢迎来到懒人图库！</div>
+		<div class="r"><a href="../../www.lanrentuku.com/index.htm">返回首页</a> | <a onclick="addToFavorite()">收藏本站</a> | <a href="../../www.lanrentuku.com/about/sitemap.html"> 网站地图</a></div>
+	</div>
+</div>
+<div id="b">
+<!--顶部开始-->
+<div id="header">
+	<a href="../../www.lanrentuku.com/index.htm" class="logo"><img src="../../img.lanrentuku.com/img/images/logo.jpg" alt="懒人图库"/></a>
+	<span class="weibo"><script>dy("weibo");</script></span>
+</div>
+<div id=daohang>
+  <li class="tab home"><a href="../../www.lanrentuku.com/index.htm" class="tablink">首 页</a></li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/vector/index.htm" class="tablink arwlink">矢量素材</a>
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/vector/flower/index.htm">矢量花纹</a>
+	    <a href="../../www.lanrentuku.com/vector/classics/index.htm">经典实用</a>
+	    <a href="../../www.lanrentuku.com/vector/festival/index.htm">矢量节日</a>
+	    <a href="../../www.lanrentuku.com/vector/design/index.htm">广告设计</a>
+	    <a href="../../www.lanrentuku.com/vector/chinese_style/index.htm">矢量中国</a>
+	    <a href="../../www.lanrentuku.com/vector/icon/index.htm">矢量图标</a>
+	    <a href="../../www.lanrentuku.com/vector/trend/index.htm">矢量潮流</a>
+	    <a href="../../www.lanrentuku.com/vector/logo/index.htm">矢量标志</a>
+	    <a href="../../www.lanrentuku.com/vector/life/index.htm">生活百科</a>
+	    <a href="../../www.lanrentuku.com/vector/cartoon/index.htm">矢量卡通</a>
+	    <a href="../../www.lanrentuku.com/vector/people/index.htm">矢量人物</a>
+	    <a href="../../www.lanrentuku.com/vector/transport/index.htm">交通运输</a>
+	    <a href="../../www.lanrentuku.com/vector/animal/index.htm">矢量动物</a>
+	    <a href="../../www.lanrentuku.com/vector/plant/index.htm">矢量植物</a>
+	    <a href="../../www.lanrentuku.com/vector/landscape/index.htm">风景建筑</a>
+	    <a href="../../www.lanrentuku.com/vector/food_fruit/index.htm">食品果蔬</a>
+	    <a href="../../www.lanrentuku.com/vector/font/index.htm">矢量字体</a>
+	    <a href="../../www.lanrentuku.com/vector/background/index.htm">矢量背景</a>
+	    <a href="../../www.lanrentuku.com/vector/sport/index.htm">体育运动</a>
+	    <a href="../../www.lanrentuku.com/vector/other/index.htm">其他矢量</a>
+	  </ul>
+  </li>  
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/png/index.htm" class="tablink arwlink">PNG图标</a> 
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/png/128x128.html">128x128</a>
+	    <a href="../../www.lanrentuku.com/png/256x256.html">256x256</a>
+	    <a href="../../www.lanrentuku.com/png/512x512.html">512x512</a>
+	    <a href="../../www.lanrentuku.com/png/32x32.html">32x32</a>
+	    <a href="../../www.lanrentuku.com/png/48x48.html">48x48</a>
+	    <a href="../../www.lanrentuku.com/png/64x64.html">64x64</a>
+	  </ul>
+  </li> 
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/js/index.htm" class="tablink arwlink">JS代码</a><div class="hot"></div>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/js/jiaodiantu.html">焦 点 图</a>
+		<a href="../../www.lanrentuku.com/js/quanping.html">全屏广告</a>
+		<a href="../../www.lanrentuku.com/js/duilian.html">对联广告</a>
+		<a href="../../www.lanrentuku.com/js/kefu.html">在线客服</a>
+		<a href="../../www.lanrentuku.com/js/xiangce.html">相册代码</a>
+		<a href="../../www.lanrentuku.com/js/daohang.html">菜单导航</a>
+		<a href="../../www.lanrentuku.com/js/biaoqian.html">TAB标签</a>
+		<a href="../../www.lanrentuku.com/js/piaofu.html">悬浮漂浮</a>
+		<a href="../../www.lanrentuku.com/js/shipin.html">视频播放</a>
+		<a href="../../www.lanrentuku.com/js/tupian.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/fanpai.html">翻牌书角</a>
+		<a href="../../www.lanrentuku.com/js/qita.html">其他代码</a>
+		<a href="../../www.lanrentuku.com/js/nav.html">导航菜单</a>
+		<a href="../../www.lanrentuku.com/js/form.html">表单按钮</a>
+		<a href="../../www.lanrentuku.com/js/text.html">文字特效</a>
+		<a href="../../www.lanrentuku.com/js/table.html">表格图层</a>
+		<a href="../../www.lanrentuku.com/js/picture.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/date.html">时间日期</a>
+		<a href="../../www.lanrentuku.com/js/scroll.html">滚动代码</a>
+		<a href="../../www.lanrentuku.com/js/window.html">窗口特效</a>
+		<a href="../../www.lanrentuku.com/js/color.html">颜色背景</a>
+		<a href="../../www.lanrentuku.com/js/website.html">网站常用</a>
+		<a href="../../www.lanrentuku.com/js/css.html">CSS样式</a>
+		<a href="../../www.lanrentuku.com/js/other.html">其他特效</a> 			
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/psd/index.htm" class="tablink arwlink">PSD素材</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/psd/sheji/index.htm">设计元素</a>
+            <a href="../../www.lanrentuku.com/psd/wangye/index.htm">网页元素</a>
+            <a href="../../www.lanrentuku.com/psd/anniu/index.htm">按钮素材</a>
+            <a href="../../www.lanrentuku.com/psd/huawen/index.htm">花纹元素</a>
+            <a href="../../www.lanrentuku.com/psd/fangchan/index.htm">房产模板</a>
+            <a href="../../www.lanrentuku.com/psd/mingpian/index.htm">名片模板</a>
+            <a href="../../www.lanrentuku.com/psd/ziti/index.htm">字体设计</a>
+            <a href="../../www.lanrentuku.com/psd/tubiao/index.htm">图标设计</a>
+            <a href="../../www.lanrentuku.com/psd/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/psd/jiemian/index.htm">界面设计</a>
+            <a href="../../www.lanrentuku.com/psd/nianli/index.htm">年历台历</a>
+            <a href="../../www.lanrentuku.com/psd/zhongguo/index.htm">中国元素</a>
+            <a href="../../www.lanrentuku.com/psd/katong/index.htm">卡通素材</a>
+            <a href="../../www.lanrentuku.com/psd/renwu/index.htm">人物素材</a>
+            <a href="../../www.lanrentuku.com/psd/shenghuo/index.htm">生活百科</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/tupian/index.htm" class="tablink arwlink">图片素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/tupian/beijingtupian/index.htm">背景图片</a>
+		<a href="../../www.lanrentuku.com/tupian/renwutupian/index.htm">人物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/jingwutupian/index.htm">静物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/dongwutupian/index.htm">动物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/zhiwutupian/index.htm">植物花卉</a>
+		<a href="../../www.lanrentuku.com/tupian/meishitupian/index.htm">美食图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shuiguotupian/index.htm">水果图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shucaitupian/index.htm">蔬菜图片</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/lanren/index.htm" class="tablink arwlink">网页素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/gif/index.htm">网页小图片</a>
+		<a href="../../www.lanrentuku.com/bg/index.htm">网页背景</a>
+		<a href="../../www.lanrentuku.com/software/index.htm">软件分享</a>
+		<a href="../../www.lanrentuku.com/qq/index.htm">QQ表情</a>
+		<a href="../../www.lanrentuku.com/news/index.htm">酷文分享</a>
+		<a href="../../tool.lanrentuku.com/index.htm">懒人工具箱</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../index.htm" class="tablink arwlink">用户体验</a><div class="new"></div>
+	  <ul class="subnav">
+			<a href="../ui/index.htm">视觉设计</a>
+			<a href="../id/index.htm">交互设计</a>
+			<a href="../ad/index.htm">广告设计</a>
+			<a href="../di/index.htm">设计思想</a>
+			<a href="../ur/index.htm">用户研究</a>
+			<a href="index.htm">前端开发</a>
+			<a href="../pm/index.htm">产品经理</a>
+			<a href="../doc/index.htm">资源文档</a>
+			<a href="../123/index.htm">网址导航</a>
+			<a href="../../www.lanrentuku.com/zt/yulu/index.htm">设计语录</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/show/index.htm" class="tablink arwlink">设计分享</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/show/pingmian/index.htm">平面设计</a>
+            <a href="../../www.lanrentuku.com/show/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/show/mingpian/index.htm">名片设计</a>
+            <a href="../../www.lanrentuku.com/show/qita/index.htm">其他艺术</a>
+            <a href="../../www.lanrentuku.com/show/guanggao/index.htm">广告创意</a>
+            <a href="../../www.lanrentuku.com/show/biaozhi/index.htm">标志设计</a>
+            <a href="../../www.lanrentuku.com/show/huihua/index.htm">绘画艺术</a>
+            <a href="../../www.lanrentuku.com/show/chanpin/index.htm">产品设计</a>
+            <a href="../../www.lanrentuku.com/show/sheying/index.htm">摄影欣赏</a>
+            <a href="../../www.lanrentuku.com/show/jiaohu/index.htm">交互设计</a>
+            <a href="../../www.lanrentuku.com/show/shipin/index.htm">视频广告</a>
+	  </ul>
+  </li>
+  <li class="tab"><a href="../../bbs.lanrentuku.com/index.htm" class="tablink">懒人论坛</a></li>
+</div>
+<div id="ss">
+	<div class="yulu"><script>dy("yulu");</script></div>
+	<div class="search"><script>dysearch();</script></div>
+</div>
+<div id="topad">
+	<div class="top234x90"><script>dy("top234x90");</script></div>
+	<div class="top968x90"><script>dy("top960x90");</script></div>
+</div>
+<!--顶部结束-->
+
+<div id="l">
+	<div class="place">当前位置：<a href='../../www.lanrentuku.com/index.htm'>首页</a> > <a href='../index.htm'>用户体验</a> > <a href='index.htm'>前端开发</a> > </div>
+	<div class="title">
+	     <h1>前端CSS规范整理</h1><span><script>dy("bdshare");</script></span>
+		 <div class="zuozhe">来源/作者：前端　类别：<a href="index.htm">前端开发</a>　字体大小：<a onclick="fontsize(1)" href="#">大</a>|<a onclick="fontsize(2)" href="#">中</a>|<a onclick="fontsize(3)" href="#">小</a>　背景颜色：<a onclick="backcolor(1)" href="#">蓝</a>|<a onclick="backcolor(2)" href="#">白</a>|<a onclick="backcolor(3)" href="#">灰</a>　<a href='css-suoxie.html' class='zuozhe' title='上一篇：10个CSS简写/优化技巧'>&laquo;</a> </div>
+    </div><!-- /title -->
+	<div id="yuedu" class="content-a content-news">
+        <div class="ny336x280"><script>dy("ny336x280");</script></div>
+		<p><strong>一、文件规范</strong></p><p>1、文件均归档至约定的目录中。</p><p>具体要求通过豆瓣的CSS规范进行讲解：</p><p>所有的CSS分为两大类：通用类和业务类。通用的CSS文件，放在如下目录中：</p><ul class=" list-paddingleft-2"><li><p>基本样式库&nbsp;/css/core&nbsp;</p></li><li><p>通用UI元素样式库&nbsp;/css/lib&nbsp;</p></li><li><p>JS组件相关样式库&nbsp;/css/ui&nbsp;</p></li></ul><p>业务类的CSS是指和具体产品相关的文件，放在如下目录中：</p><ul class=" list-paddingleft-2"><li><p>读书&nbsp;/css/book/&nbsp;</p></li><li><p>电影&nbsp;/css/movie/&nbsp;</p></li><li><p>音乐&nbsp;/css/music/&nbsp;</p></li><li><p>社区&nbsp;/css/sns/&nbsp;</p></li><li><p>小站&nbsp;/css/site/&nbsp;</p></li><li><p>同城&nbsp;/css/location/&nbsp;</p></li><li><p>电台&nbsp;/css/radio/&nbsp;</p></li></ul><p>外联CSS文件适用于全站级和产品级通用的大文件。内联CSS文件适用于在一个或几个页面共用的CSS。另外一对具体的CSS进行文档化的整理。如：</p><ul class=" list-paddingleft-2"><li><p>util-01&nbsp;reset&nbsp;/css/core/reset.css&nbsp;</p></li><li><p>util-02&nbsp;通用模块容器&nbsp;/css/core/mod.css&nbsp;</p></li><li><p>ui-01.&nbsp;喜欢按钮&nbsp;/css/core/fav_btn.css&nbsp;</p></li><li><p>ui-02.&nbsp;视频/相册列表项&nbsp;/css/core/media_item.css&nbsp;</p></li><li><p>ui-03.&nbsp;评星&nbsp;/css/core/rating.css&nbsp;</p></li><li><p>ui-04.&nbsp;通用按钮&nbsp;/css/core/common_button.css&nbsp;</p></li><li><p>ui-05.&nbsp;分页&nbsp;/css/core/pagination.css&nbsp;</p></li><li><p>ui-06.&nbsp;推荐按钮&nbsp;/css/core/rec_btn.css&nbsp;</p></li><li><p>ui-07.&nbsp;老版对话框&nbsp;/css/core/old_dialog.css&nbsp;</p></li><li><p>ui-08.&nbsp;老版Tab&nbsp;/css/core/old_tab.css&nbsp;</p></li><li><p>ui-09.&nbsp;老版成员列表&nbsp;/css/core/old_userlist.css&nbsp;</p></li><li><p>ui-10.&nbsp;老版信息区&nbsp;/css/core/notify.css&nbsp;</p></li><li><p>ui-11.&nbsp;社区用户导航&nbsp;/css/core/profile_nav.css&nbsp;</p></li><li><p>ui-12.&nbsp;当前大社区导航&nbsp;/css/core/site_nav.css&nbsp;</p></li><li><p>ui-13.&nbsp;加载中&nbsp;/css/lib/loading.css&nbsp;</p></li></ul><p>2、文件引入可通过外联或内联方式引入。</p><ul class=" list-paddingleft-2"><li><p>外联方式：<link rel="”STYLESHEET”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link rel="”stylesheet”" href="”…”/index.htm" /><link href="”…”/index.htm" rel="”stylesheet”"></link href="”…”" rel="”stylesheet”">（类型声明type=”text/css”可以省略）&nbsp;</p></li><li><p>内联方式：（类型声明type=”text/css”可以省略）&nbsp;</p></li><li><p>link和style标签都应该放入head中，原则上，不允许在html上直接写样式。避免在CSS中使用@import，嵌套不要超过一层。</p></li></ul><p>3、文件名、文件编码及文件大小</p><ul class=" list-paddingleft-2"><li><p>文件名必须由小写字母、数字、中划线组成&nbsp;</p></li><li><p>文件必须用UTF-8编码，使用UTF-8（非BOM），在HTML中指定UTF-8编码，在CSS中则不需要特别指定因为默认就是UTF-8。&nbsp;</p></li><li><p>单个CSS文件避免过大（建议少于300行）&nbsp;</p></li></ul><p><strong>二、注释规范</strong></p><p>1、文件顶部注释（推荐使用）</p><p>/*&nbsp;*&nbsp;@description:&nbsp;中文说明&nbsp;*&nbsp;@author:&nbsp;name&nbsp;*&nbsp;@update:&nbsp;name&nbsp;(2013-04-13&nbsp;18:32)&nbsp;*/&nbsp;</p><p>2、模块注释</p><p>/*&nbsp;module:&nbsp;module1&nbsp;by&nbsp;张三&nbsp;*/&nbsp;…&nbsp;/*&nbsp;module:&nbsp;module2&nbsp;by&nbsp;张三&nbsp;*/&nbsp;</p><p>模块注释必须单独写在一行</p><p>3、&nbsp;单行注释与多行注释</p><p>/*&nbsp;this&nbsp;is&nbsp;a&nbsp;short&nbsp;comment&nbsp;*/</p><p>单行注释可以写在单独一行，也可以写在行尾，注释中的每一行长度不超过40个汉字，或者80个英文字符。</p><p>/*<br />*&nbsp;this&nbsp;is&nbsp;comment&nbsp;line&nbsp;1.<br />*&nbsp;this&nbsp;is&nbsp;comment&nbsp;line&nbsp;2.<br />*/</p><p>多行注释必须写在单独行内</p><p>4、特殊注释</p><p>/*&nbsp;TODO:&nbsp;xxxx&nbsp;by&nbsp;name&nbsp;2013-04-13&nbsp;18:32&nbsp;*/</p><p>/*&nbsp;BUGFIX:&nbsp;xxxx&nbsp;by&nbsp;name&nbsp;2012-04-13&nbsp;18:32&nbsp;*/</p><p>用于标注修改、待办等信息</p><p>5、区块注释</p><p>/*&nbsp;Header&nbsp;*/&nbsp;/*&nbsp;Footer&nbsp;*/&nbsp;/*&nbsp;Gallery&nbsp;*/&nbsp;</p><p>对一个代码区块注释（可选），将样式语句分区块并在新行中对其注释。</p><p><strong>三、命名规范</strong></p><p>使用有意义的或通用的ID和class命名：ID和class的命名应反映该元素的功能或使用通用名称，而不要用抽象的晦涩的命名。反映元素的使用目的是首选；使用通用名称代表该元素不表特定意义，与其同级元素无异，通常是用于辅助命名；使用功能性或通用的名称可以更适用于文档或模版变化的情况。</p><ul class=" list-paddingleft-2"><li><p>/*&nbsp;不推荐:&nbsp;无意义&nbsp;*/&nbsp;#yee-1901&nbsp;{}&nbsp;</p></li><li><p>/*&nbsp;不推荐:&nbsp;与样式相关&nbsp;*/&nbsp;.button-green&nbsp;{}.clear&nbsp;{}&nbsp;</p></li><li><p>/*&nbsp;推荐:&nbsp;特殊性&nbsp;*/&nbsp;#gallery&nbsp;{}#login&nbsp;{}.video&nbsp;{}&nbsp;</p></li><li><p>/*&nbsp;推荐:&nbsp;通用性&nbsp;*/&nbsp;.aux&nbsp;{}.alt&nbsp;{}&nbsp;</p></li></ul><p>常用命名（多记多查英文单词）：page、wrap、layout、header(head)、footer(foot、ft)、content(cont)、menu、nav、main、submain、sidebar(side)、logo、banner、title(tit)、popo(pop)、icon、note、btn、txt、iblock、window(win)、tips等</p><p>ID和class命名越简短越好，只要足够表达涵义。这样既有助于理解，也能提高代码效率。</p><ul class=" list-paddingleft-2"><li><p>/*&nbsp;不推荐&nbsp;*/&nbsp;#navigation&nbsp;{}.atr&nbsp;{}&nbsp;</p></li><li><p>/*&nbsp;推荐&nbsp;*/&nbsp;#nav&nbsp;{}.author&nbsp;{}&nbsp;</p></li></ul><p>类型选择器避免同时使用标签、ID和class作为定位一个元素选择器；从性能上考虑也应尽量减少选择器的层级。</p><ul class=" list-paddingleft-2"><li><p>/*&nbsp;不推荐&nbsp;*/ul#example&nbsp;{}div.error&nbsp;{}&nbsp;</p></li><li><p>/*&nbsp;推荐&nbsp;*/#example&nbsp;{}.error&nbsp;{}&nbsp;</p></li></ul><p>命名时需要注意的点：</p><ol class=" list-paddingleft-2"><li><p>规则命名中，一律采用小写加中划线的方式，不允许使用大写字母或&nbsp;_&nbsp;</p></li><li><p>命名避免使用中文拼音，应该采用更简明有语义的英文单词进行组合&nbsp;</p></li><li><p>命名注意缩写，但是不能盲目缩写，具体请参见常用的CSS命名规则&nbsp;</p></li><li><p>不允许通过1、2、3等序号进行命名&nbsp;</p></li><li><p>避免class与id重名&nbsp;</p></li><li><p>id用于标识模块或页面的某一个父容器区域，名称必须唯一，不要随意新建id&nbsp;</p></li><li><p>class用于标识某一个类型的对象，命名必须言简意赅。&nbsp;</p></li><li><p>尽可能提高代码模块的复用，样式尽量用组合的方式&nbsp;</p></li><li><p>规则名称中不应该包含颜色（red/blue）、定位（left/right）等与具体显示效果相关的信息。应该用意义命名，而不是样式显示结果命名。&nbsp;</p></li></ol><p>1、常用id的命名：</p><p>(1)页面结构</p><ul class=" list-paddingleft-2"><li><p>容器:&nbsp;container&nbsp;</p></li><li><p>页头：header&nbsp;</p></li><li><p>内容：content/container&nbsp;</p></li><li><p>页面主体：main&nbsp;</p></li><li><p>页尾：footer&nbsp;</p></li><li><p>导航：nav&nbsp;</p></li><li><p>侧栏：sidebar&nbsp;</p></li><li><p>栏目：column&nbsp;</p></li><li><p>页面外围控制整体布局宽度：wrapper&nbsp;</p></li><li><p>左右中：left&nbsp;right&nbsp;center&nbsp;</p></li></ul><p>(2)导航</p><ul class=" list-paddingleft-2"><li><p>导航：nav&nbsp;</p></li><li><p>主导航：mainbav&nbsp;</p></li><li><p>子导航：subnav&nbsp;</p></li><li><p>顶导航：topnav&nbsp;</p></li><li><p>边导航：sidebar&nbsp;</p></li><li><p>左导航：leftsidebar&nbsp;</p></li><li><p>右导航：rightsidebar&nbsp;</p></li><li><p>菜单：menu&nbsp;</p></li><li><p>子菜单：submenu&nbsp;</p></li><li><p>标题:&nbsp;title&nbsp;</p></li><li><p>摘要:&nbsp;summary&nbsp;</p></li></ul><p>(3)功能</p><ul class=" list-paddingleft-2"><li><p>标志：logo&nbsp;</p></li><li><p>广告：banner&nbsp;</p></li><li><p>登陆：login&nbsp;</p></li><li><p>登录条：loginbar&nbsp;</p></li><li><p>注册：regsiter&nbsp;</p></li><li><p>搜索：search&nbsp;</p></li><li><p>功能区：shop&nbsp;</p></li><li><p>标题：title&nbsp;</p></li><li><p>加入：joinus&nbsp;</p></li><li><p>状态：status&nbsp;</p></li><li><p>按钮：btn&nbsp;</p></li><li><p>滚动：scroll&nbsp;</p></li><li><p>标签页：tab&nbsp;</p></li><li><p>文章列表：list&nbsp;</p></li><li><p>提示信息：msg&nbsp;</p></li><li><p>当前的:&nbsp;current&nbsp;</p></li><li><p>小技巧：tips&nbsp;</p></li><li><p>图标:&nbsp;icon&nbsp;</p></li><li><p>注释：note&nbsp;</p></li><li><p>指南：guild&nbsp;</p></li><li><p>服务：service&nbsp;</p></li><li><p>热点：hot&nbsp;</p></li><li><p>新闻：news&nbsp;</p></li><li><p>下载：download&nbsp;</p></li><li><p>投票：vote&nbsp;</p></li><li><p>合作伙伴：partner&nbsp;</p></li><li><p>友情链接：link&nbsp;</p></li><li><p>版权：copyright&nbsp;</p></li></ul><p>2、常用class的命名：</p><p>(1)颜色:使用颜色的名称或者16进制代码,如</p><ul class=" list-paddingleft-2"><li><p>.red&nbsp;{&nbsp;color:&nbsp;red;&nbsp;}&nbsp;</p></li><li><p>.f60&nbsp;{&nbsp;color:&nbsp;#f60;&nbsp;}&nbsp;</p></li><li><p>.ff8600&nbsp;{&nbsp;color:&nbsp;#ff8600;&nbsp;}&nbsp;</p></li></ul><p>(2)字体大小,直接使用”font+字体大小”作为名称,如</p><ul class=" list-paddingleft-2"><li><p>.font12px&nbsp;{&nbsp;font-size:&nbsp;12px;&nbsp;}&nbsp;</p></li><li><p>.font9pt&nbsp;{font-size:&nbsp;9pt;&nbsp;}&nbsp;</p></li></ul><p>(3)对齐样式,使用对齐目标的英文名称,如</p><ul class=" list-paddingleft-2"><li><p>.left&nbsp;{&nbsp;float:left;&nbsp;}&nbsp;</p></li><li><p>.bottom&nbsp;{&nbsp;float:bottom;&nbsp;}&nbsp;</p></li></ul><p>(4)标题栏样式,使用”类别+功能”的方式命名,如</p><ul class=" list-paddingleft-2"><li><p>.barnews&nbsp;{&nbsp;}&nbsp;</p></li><li><p>.barproduct&nbsp;{&nbsp;}&nbsp;</p></li></ul><p><strong>四、书写规范</strong></p><p>1、排版规范</p><p>(1)使用4个空格，而不使用tab或者混用空格+tab作为缩进；</p><p>(2)规则可以写成单行，或者多行，但是整个文件内的规则排版必须统一；</p><p>单行形式书写风格的排版约束</p><ul class=" list-paddingleft-2"><li><p>如果是在html中写内联的css，则必须写成单行；&nbsp;</p></li><li><p>每一条规则的大括号&nbsp;{&nbsp;前后加空格&nbsp;；&nbsp;</p></li><li><p>每一条规则结束的大括号&nbsp;}&nbsp;前加空格；&nbsp;</p></li><li><p>属性名冒号之前不加空格，冒号之后加空格；&nbsp;</p></li><li><p>每一个属性值后必须添加分号;&nbsp;并且分号后空格；&nbsp;</p></li><li><p>多个selector共用一个样式集，则多个selector必须写成多行形式&nbsp;；&nbsp;</p></li></ul><p>多行形式书写风格的排版约束</p><ul class=" list-paddingleft-2"><li><p>每一条规则的大括号&nbsp;{&nbsp;前添加空格;&nbsp;</p></li><li><p>多个selector共用一个样式集，则多个selector必须写成多行形式&nbsp;;&nbsp;</p></li><li><p>每一条规则结束的大括号&nbsp;}&nbsp;必须与规则选择器的第一个字符对齐&nbsp;;&nbsp;</p></li><li><p>属性名冒号之前不加空格，冒号之后加空格;&nbsp;</p></li><li><p>属性值之后添加分号;&nbsp;</p></li></ul><p>2、属性编写顺序</p><ol class=" list-paddingleft-2"><li><p>显示属性：display/list-style/position/float/clear&nbsp;…&nbsp;</p></li><li><p>自身属性（盒模型）：width/height/margin/padding/border&nbsp;</p></li><li><p>背景：background&nbsp;</p></li><li><p>行高：line-height&nbsp;</p></li><li><p>文本属性：color/font/text-decoration/text-align/text-indent/vertical-align/white-space/content…&nbsp;</p></li><li><p>其他：cursor/z-index/zoom/overflow&nbsp;</p></li><li><p>CSS3属性：transform/transition/animation/box-shadow/border-radius&nbsp;</p></li><li><p>如果使用CSS3的属性，如果有必要加入浏览器前缀，则按照&nbsp;-webkit-&nbsp;/&nbsp;-moz-&nbsp;/&nbsp;-ms-&nbsp;/&nbsp;-o-&nbsp;/&nbsp;std的顺序进行添加，标准属性写在最后。&nbsp;</p></li><li><p>链接的样式请严格按照如下顺序添加：&nbsp;a:link&nbsp;-&gt;&nbsp;a:visited&nbsp;-&gt;&nbsp;a:hover&nbsp;-&gt;&nbsp;a:active&nbsp;</p></li></ol><p>3、规则书写规范</p><ol class=" list-paddingleft-2"><li><p>使用单引号，不允许使用双引号;&nbsp;</p></li><li><p>每个声明结束都应该带一个分号，不管是不是最后一个声明;&nbsp;</p></li><li><p>除16进制颜色和字体设置外，CSS文件中的所有的代码都应该小写;&nbsp;</p></li><li><p>除了重置浏览器默认样式外，禁止直接为html&nbsp;tag添加css样式设置;&nbsp;</p></li><li><p>每一条规则应该确保选择器唯一，禁止直接为全局.nav/.header/.body等类设置属性;&nbsp;</p></li></ol><p>4、代码性能优化</p><ol class=" list-paddingleft-2"><li><p>合并margin、padding、border的-left/-top/-right/-bottom的设置，尽量使用短名称。&nbsp;</p></li><li><p>选择器应该在满足功能的基础上尽量简短，减少选择器嵌套，查询消耗。但是一定要避免覆盖全局样式设置。&nbsp;</p></li><li><p>注意选择器的性能，不要使用低性能的选择器。&nbsp;</p></li><li><p>禁止在css中使用*选择符。&nbsp;</p></li><li><p>除非必须，否则，一般有class或id的，不需要再写上元素对应的tag。&nbsp;</p></li><li><p>0后面不需要单位，比如0px可以省略成0，0.8px可以省略成.8px。&nbsp;</p></li><li><p>如果是16进制表示颜色，则颜色取值应该大写。&nbsp;</p></li><li><p>如果可以，颜色尽量用三位字符表示，例如#AABBCC写成#ABC&nbsp;。&nbsp;</p></li><li><p>如果没有边框时，不要写成border:0，应该写成border:none&nbsp;。&nbsp;</p></li><li><p>尽量避免使用AlphaImageLoader&nbsp;。&nbsp;</p></li><li><p>在保持代码解耦的前提下，尽量合并重复的样式。&nbsp;</p></li><li><p>background、font等可以缩写的属性，尽量使用缩写形式&nbsp;。&nbsp;</p></li></ol><p>5、CSS&nbsp;Hack的使用</p><p>请不用动不动就使用浏览器检测和CSS&nbsp;Hacks，先试试别的解决方法吧！考虑到代码高效率和易管理，虽然这两种方法能快速解决浏览器解析差异，但应被视为最后的手段。在长期的项目中，允许使用hack只会带来更多的hack，你越是使用它，你越是会依赖它！</p><p>推荐使用下面的：</p><p><img alt="css-hack" src="../../img.lanrentuku.com/img/allimg/1304/5381366257790.png" width="584" height="536" /></p><p>6、字体规则</p><ul class=" list-paddingleft-2"><li><p>为了防止文件合并及编码转换时造成问题，建议将样式中文字体名字改成对应的英文名字，如：黑体(SimHei)&nbsp;宋体(SimSun)&nbsp;微软雅黑&nbsp;(Microsoft&nbsp;Yahei，几个单词中间有空格组成的必须加引号)&nbsp;</p></li><li><p>字体粗细采用具体数值，粗体bold写为700，正常normal写为400&nbsp;</p></li><li><p>font-size必须以px或pt为单位，推荐用px（注：pt为打印版字体大小设置），不允许使用xx-small/x-small/small/medium/large/x-large/xx-large等值&nbsp;</p></li><li><p>为了对font-family取值进行统一，更好的支持各个操作系统上各个浏览器的兼容性，font-family不允许在业务代码中随意设置&nbsp;</p></li></ul><p><strong>五、其他规范</strong></p><ul class=" list-paddingleft-2"><li><p>不要轻易改动全站级CSS和通用CSS库。改动后，要经过全面测试。&nbsp;</p></li><li><p>避免使用filter&nbsp;</p></li><li><p>避免在CSS中使用expression&nbsp;</p></li><li><p>避免过小的背景图片平铺。&nbsp;</p></li><li><p>尽量不要在CSS中使用!important&nbsp;</p></li><li><p>绝对不要在CSS中使用”*”选择符&nbsp;</p></li><li><p>层级(z-index)必须清晰明确，页面弹窗、气泡为最高级（最高级为999），不同弹窗气泡之间可在三位数之间调整；普通区块为10-90内10的倍数；区块展开、弹出为当前父层级上个位增加，禁止层级间盲目攀比。&nbsp;</p></li><li><p>背景图片请尽可能使用sprite技术,&nbsp;减小http请求,&nbsp;考虑到多人协作开发,&nbsp;sprite按照模块、业务、页面来划分均可。&nbsp;</p></li></ul><p><strong>六、测试规范</strong></p><p>1、了解浏览器特效支持</p><p>为了页面性能考虑，如果浏览器不支持CSS3相关属性的，则该浏览器的某些特效将不再支持，属性的支持情况如下表所示（Y为支持，N为不支持）：</p><p><img alt="brower" src="../../img.lanrentuku.com/img/allimg/1304/79341366257790.png" width="521" height="218" /></p><p>2、&nbsp;设定浏览器支持标准</p><p><img alt="abc" src="../../img.lanrentuku.com/img/allimg/1304/5831366257790.png" width="314" height="200" /></p><ul class=" list-paddingleft-2"><li><p>A级－交互和视觉完全符全设计的要求&nbsp;</p></li><li><p>B级－视觉上允许有所差异，但不破坏页面的整体效果&nbsp;</p></li><li><p>C级－可忽略设计上的细节，但不防碍使用&nbsp;</p></li></ul><p>3、常用样式测试工具</p><p>W3C&nbsp;CSS&nbsp;validator：http://jigsaw.w3.org/css-validator/</p><p>CSS&nbsp;Lint：http://csslint.net/</p><p>CSS&nbsp;Usage：https://addons.mozilla.org/en-us/firefox/addon/css-usage/</p>	
+ 		<script type="text/javascript">
+			SyntaxHighlighter.highlight();
+        </script>
+        <div class="ny728x90"><script>dy("ny728x90");</script></div>
+        <div class="ny728x90"><script>dy("ny728x90-b");</script></div>
+        <div class="tag">标签：<a href='../../www.lanrentuku.com/sort/%C7%B0%B6%CB/index.htm'>前端</a><a href='../../www.lanrentuku.com/sort/CSS%B9%E6%B7%B6/index.htm'>CSS规范</a></div>
+	</div><!-- /content -->
+	<div class="pinglun">
+		<div class="ds-thread"></div>
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"lanrentuku"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = '../../static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	</div>
+	<div class="lb468x15"><script>dy("lb468x15");</script></div>	
+	<div class="egg"><script>dy("egg");</script></div>	
+</div><!-- /l -->
+
+<div id="r">
+	<div class="nav-sub">
+		<dl>
+		<dt><span>用户体验</span><div></div><a href="../index.htm">全部&#8250;&#8250;</a></dt>
+			
+			<dd><a href='../ui/index.htm'>视觉设计</a></dd>
+			<dd><a href='../id/index.htm'>交互设计</a></dd>
+			<dd><a href='../ad/index.htm'>广告设计</a></dd>
+			<dd><a href='../di/index.htm'>设计思想</a></dd>
+			<dd><a href='../ur/index.htm'>用户研究</a></dd><dd><a href='index.htm' class='on'>前端开发</a></dd>
+			<dd><a href='../pm/index.htm'>产品经理</a></dd>
+			<dd><a href='../doc/index.htm'>资源文档</a></dd>
+			<dd><a href='../123/index.htm'>网址导航</a></dd>
+            <dd><a href='../../www.lanrentuku.com/zt/yulu/index.htm' target="_blank">设计语录</a></dd>
+		</dl>	
+	</div>		
+	<div class="lb336x280"><script>dy("lb336x280_1");</script></div>		
+	<div class="h">
+		<dl>
+		<dt>猜你也喜欢看这些 ······ </dt>
+			<dd><a href="6409.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311403465.jpg" alt="常用CSS缩写语法总结" class="f"/></p>常用CSS缩写语法总结<span class="l">前端开发</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6411.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311359235.jpg" alt="input搜索框心得" class="f"/></p>input搜索框心得<span class="l">前端开发</span><span class="t">2013-07-26</span></a></dd>
+<dd><a href="accessibility.html"><p><img src="../../img.lanrentuku.com/img/litimg/1211/061041495.jpg" alt="腾讯网无障碍说明" class="f"/></p>腾讯网无障碍说明<span class="l">前端开发</span><span class="t">2012-11-06</span></a></dd>
+<dd><a href="css-suoxie.html"><p><img src="../../img.lanrentuku.com/img/litimg/1303/281124255.jpg" alt="10个CSS简写/优化技巧" class="f"/></p>10个CSS简写/优化技巧<span class="l">前端开发</span><span class="t">2013-04-30</span></a></dd>
+<dd><a href="css-guifan-qianduan.html"><p><img src="../../img.lanrentuku.com/img/litimg/1304/181207235.jpg" alt="前端CSS规范整理" class="f"/></p>前端CSS规范整理<span class="l">前端开发</span><span class="t">2013-04-18</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_2");</script></div>
+	<div class="h">
+		<dl>
+		<dt>这些是最新的 ······ </dt>
+			<dd><a href="6411.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311359235.jpg" alt="input搜索框心得" class="f"/></p>input搜索框心得<span class="l">前端开发</span><span class="t">2013-07-26</span></a></dd>
+<dd><a href="css-suoxie.html"><p><img src="../../img.lanrentuku.com/img/litimg/1303/281124255.jpg" alt="10个CSS简写/优化技巧" class="f"/></p>10个CSS简写/优化技巧<span class="l">前端开发</span><span class="t">2013-04-30</span></a></dd>
+<dd><a href="css-guifan-qianduan.html"><p><img src="../../img.lanrentuku.com/img/litimg/1304/181207235.jpg" alt="前端CSS规范整理" class="f"/></p>前端CSS规范整理<span class="l">前端开发</span><span class="t">2013-04-18</span></a></dd>
+<dd><a href="accessibility.html"><p><img src="../../img.lanrentuku.com/img/litimg/1211/061041495.jpg" alt="腾讯网无障碍说明" class="f"/></p>腾讯网无障碍说明<span class="l">前端开发</span><span class="t">2012-11-06</span></a></dd>
+<dd><a href="6409.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311403465.jpg" alt="常用CSS缩写语法总结" class="f"/></p>常用CSS缩写语法总结<span class="l">前端开发</span><span class="t">2012-08-30</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_3");</script></div>
+    <a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank"><img src="../../www.lanrentuku.com/img/images/x.gif" class="tqq" title="关注腾讯微博"/></a>
+</div><!-- /r -->
+	
+<!--底部开始-->
+<div id="footer">
+	<div class="about">
+		<dl>
+			<dt>关于</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/aboutus.html">关于我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/values.html">我们的价值观</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/event.html">大事记</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/copyright.html">版权声明</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/ad.html">广告服务</a></dd> 
+			 <dd><a href="../../www.lanrentuku.com/about/contactus.html">联系我们</a></dd>
+		</dl>
+		<dl>
+			<dt>帮助</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/help.html">常见问题</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/sitemap.html">网站地图</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/joinus.html">加入我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/tougao.html"><img src="../../img.lanrentuku.com/img/images/x.gif" class="minihot"/>网友投稿</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/links.php">友情链接</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/guestbook.html">在线留言</a></dd>
+		</dl>
+		<dl>
+			<dt>收藏</dt>
+			 <dd><a onclick="addToFavorite()">Ctrl+D收藏</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/shortcut.php">放到桌面</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/lanrentuku.zip">加入右键</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/rssmap.html">订阅rss</a></dd>
+		</dl>
+		<dl>
+			<dt>关注</dt>
+			 <dd><a href="../../weibo.com/u/2556500765/index.htm" target="_blank">新浪微博</a></dd>
+			 <dd><a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank">腾讯微博</a></dd>
+			 <dd><a href="../../511401068.qzone.qq.com/index.htm" target="_blank">qq空间</a></dd>
+			 <dd><a href="../../huaban.com/lanrentuku/index.htm" target="_blank">花瓣</a></dd>			 
+			 <dd><a href="../../blog.lanrentuku.com/index.htm" target="_blank">懒人博客</a></dd>
+			 <dd><a href="../../koubei.baidu.com/s/lanrentuku.com" target="_blank">百度口碑</a></dd>
+		</dl>
+    </div>
+	<div class="jinbu">
+		<dl>
+			<dt>我们一直在进步</dt>
+		     <script>dy("jinbu");</script>
+		</dl>
+    </div>
+	<span class="copyright">Copyright &copy; 2006-2015 <a href="../../www.lanrentuku.com/index.htm">lanrentuku.com</a> All Rights Reserved. Powered by <a href="../../www.dedecms.com/index.htm">DedeCMS_V57</a></span>
+	<span class="beian"><a href="../../www.miibeian.gov.cn/index.htm">京ICP备08001501号</a><a name="gobottom">&nbsp;</a></span>
+</div>
+<a title="返回顶部" class="top" href="#"></a>
+<!--底部结束-->
+</div><!-- /b -->
+<span style="display:none">
+	<script>dy("tj");</script>
+</span>
+</body>
+</html>

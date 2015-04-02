@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Facebook的用户体验评判规则_设计思想_懒人图库</title>
+<meta name="keywords" content="Facebook,产品设计,用户体验,评审规则,设计思想" />
+<meta name="description" content="Facebook 的产品设计五维 情感 精准定位——设计对受众定位清晰，符合该设计目标用户群的使用体验。 亲和力——所有交互元素的设计上，用户对信息沟通顺畅，感" />
+<link rel="stylesheet" type="text/css" href="../../img.lanrentuku.com/img/css/a.css">
+<script src="../../libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../img.lanrentuku.com/img/js/a.js"></script>
+<link rel="stylesheet" type="text/css" href="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css"/>
+<script type="text/javascript" charset="gbk" src="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+</head>
+
+<body>
+<div class="topbg">
+	<div class="topnav">
+		<div class="l">欢迎来到懒人图库！</div>
+		<div class="r"><a href="../../www.lanrentuku.com/index.htm">返回首页</a> | <a onclick="addToFavorite()">收藏本站</a> | <a href="../../www.lanrentuku.com/about/sitemap.html"> 网站地图</a></div>
+	</div>
+</div>
+<div id="b">
+<!--顶部开始-->
+<div id="header">
+	<a href="../../www.lanrentuku.com/index.htm" class="logo"><img src="../../img.lanrentuku.com/img/images/logo.jpg" alt="懒人图库"/></a>
+	<span class="weibo"><script>dy("weibo");</script></span>
+</div>
+<div id=daohang>
+  <li class="tab home"><a href="../../www.lanrentuku.com/index.htm" class="tablink">首 页</a></li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/vector/index.htm" class="tablink arwlink">矢量素材</a>
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/vector/flower/index.htm">矢量花纹</a>
+	    <a href="../../www.lanrentuku.com/vector/classics/index.htm">经典实用</a>
+	    <a href="../../www.lanrentuku.com/vector/festival/index.htm">矢量节日</a>
+	    <a href="../../www.lanrentuku.com/vector/design/index.htm">广告设计</a>
+	    <a href="../../www.lanrentuku.com/vector/chinese_style/index.htm">矢量中国</a>
+	    <a href="../../www.lanrentuku.com/vector/icon/index.htm">矢量图标</a>
+	    <a href="../../www.lanrentuku.com/vector/trend/index.htm">矢量潮流</a>
+	    <a href="../../www.lanrentuku.com/vector/logo/index.htm">矢量标志</a>
+	    <a href="../../www.lanrentuku.com/vector/life/index.htm">生活百科</a>
+	    <a href="../../www.lanrentuku.com/vector/cartoon/index.htm">矢量卡通</a>
+	    <a href="../../www.lanrentuku.com/vector/people/index.htm">矢量人物</a>
+	    <a href="../../www.lanrentuku.com/vector/transport/index.htm">交通运输</a>
+	    <a href="../../www.lanrentuku.com/vector/animal/index.htm">矢量动物</a>
+	    <a href="../../www.lanrentuku.com/vector/plant/index.htm">矢量植物</a>
+	    <a href="../../www.lanrentuku.com/vector/landscape/index.htm">风景建筑</a>
+	    <a href="../../www.lanrentuku.com/vector/food_fruit/index.htm">食品果蔬</a>
+	    <a href="../../www.lanrentuku.com/vector/font/index.htm">矢量字体</a>
+	    <a href="../../www.lanrentuku.com/vector/background/index.htm">矢量背景</a>
+	    <a href="../../www.lanrentuku.com/vector/sport/index.htm">体育运动</a>
+	    <a href="../../www.lanrentuku.com/vector/other/index.htm">其他矢量</a>
+	  </ul>
+  </li>  
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/png/index.htm" class="tablink arwlink">PNG图标</a> 
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/png/128x128.html">128x128</a>
+	    <a href="../../www.lanrentuku.com/png/256x256.html">256x256</a>
+	    <a href="../../www.lanrentuku.com/png/512x512.html">512x512</a>
+	    <a href="../../www.lanrentuku.com/png/32x32.html">32x32</a>
+	    <a href="../../www.lanrentuku.com/png/48x48.html">48x48</a>
+	    <a href="../../www.lanrentuku.com/png/64x64.html">64x64</a>
+	  </ul>
+  </li> 
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/js/index.htm" class="tablink arwlink">JS代码</a><div class="hot"></div>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/js/jiaodiantu.html">焦 点 图</a>
+		<a href="../../www.lanrentuku.com/js/quanping.html">全屏广告</a>
+		<a href="../../www.lanrentuku.com/js/duilian.html">对联广告</a>
+		<a href="../../www.lanrentuku.com/js/kefu.html">在线客服</a>
+		<a href="../../www.lanrentuku.com/js/xiangce.html">相册代码</a>
+		<a href="../../www.lanrentuku.com/js/daohang.html">菜单导航</a>
+		<a href="../../www.lanrentuku.com/js/biaoqian.html">TAB标签</a>
+		<a href="../../www.lanrentuku.com/js/piaofu.html">悬浮漂浮</a>
+		<a href="../../www.lanrentuku.com/js/shipin.html">视频播放</a>
+		<a href="../../www.lanrentuku.com/js/tupian.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/fanpai.html">翻牌书角</a>
+		<a href="../../www.lanrentuku.com/js/qita.html">其他代码</a>
+		<a href="../../www.lanrentuku.com/js/nav.html">导航菜单</a>
+		<a href="../../www.lanrentuku.com/js/form.html">表单按钮</a>
+		<a href="../../www.lanrentuku.com/js/text.html">文字特效</a>
+		<a href="../../www.lanrentuku.com/js/table.html">表格图层</a>
+		<a href="../../www.lanrentuku.com/js/picture.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/date.html">时间日期</a>
+		<a href="../../www.lanrentuku.com/js/scroll.html">滚动代码</a>
+		<a href="../../www.lanrentuku.com/js/window.html">窗口特效</a>
+		<a href="../../www.lanrentuku.com/js/color.html">颜色背景</a>
+		<a href="../../www.lanrentuku.com/js/website.html">网站常用</a>
+		<a href="../../www.lanrentuku.com/js/css.html">CSS样式</a>
+		<a href="../../www.lanrentuku.com/js/other.html">其他特效</a> 			
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/psd/index.htm" class="tablink arwlink">PSD素材</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/psd/sheji/index.htm">设计元素</a>
+            <a href="../../www.lanrentuku.com/psd/wangye/index.htm">网页元素</a>
+            <a href="../../www.lanrentuku.com/psd/anniu/index.htm">按钮素材</a>
+            <a href="../../www.lanrentuku.com/psd/huawen/index.htm">花纹元素</a>
+            <a href="../../www.lanrentuku.com/psd/fangchan/index.htm">房产模板</a>
+            <a href="../../www.lanrentuku.com/psd/mingpian/index.htm">名片模板</a>
+            <a href="../../www.lanrentuku.com/psd/ziti/index.htm">字体设计</a>
+            <a href="../../www.lanrentuku.com/psd/tubiao/index.htm">图标设计</a>
+            <a href="../../www.lanrentuku.com/psd/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/psd/jiemian/index.htm">界面设计</a>
+            <a href="../../www.lanrentuku.com/psd/nianli/index.htm">年历台历</a>
+            <a href="../../www.lanrentuku.com/psd/zhongguo/index.htm">中国元素</a>
+            <a href="../../www.lanrentuku.com/psd/katong/index.htm">卡通素材</a>
+            <a href="../../www.lanrentuku.com/psd/renwu/index.htm">人物素材</a>
+            <a href="../../www.lanrentuku.com/psd/shenghuo/index.htm">生活百科</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/tupian/index.htm" class="tablink arwlink">图片素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/tupian/beijingtupian/index.htm">背景图片</a>
+		<a href="../../www.lanrentuku.com/tupian/renwutupian/index.htm">人物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/jingwutupian/index.htm">静物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/dongwutupian/index.htm">动物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/zhiwutupian/index.htm">植物花卉</a>
+		<a href="../../www.lanrentuku.com/tupian/meishitupian/index.htm">美食图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shuiguotupian/index.htm">水果图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shucaitupian/index.htm">蔬菜图片</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/lanren/index.htm" class="tablink arwlink">网页素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/gif/index.htm">网页小图片</a>
+		<a href="../../www.lanrentuku.com/bg/index.htm">网页背景</a>
+		<a href="../../www.lanrentuku.com/software/index.htm">软件分享</a>
+		<a href="../../www.lanrentuku.com/qq/index.htm">QQ表情</a>
+		<a href="../../www.lanrentuku.com/news/index.htm">酷文分享</a>
+		<a href="../../tool.lanrentuku.com/index.htm">懒人工具箱</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../index.htm" class="tablink arwlink">用户体验</a><div class="new"></div>
+	  <ul class="subnav">
+			<a href="../ui/index.htm">视觉设计</a>
+			<a href="../id/index.htm">交互设计</a>
+			<a href="../ad/index.htm">广告设计</a>
+			<a href="index.htm">设计思想</a>
+			<a href="../ur/index.htm">用户研究</a>
+			<a href="../wd/index.htm">前端开发</a>
+			<a href="../pm/index.htm">产品经理</a>
+			<a href="../doc/index.htm">资源文档</a>
+			<a href="../123/index.htm">网址导航</a>
+			<a href="../../www.lanrentuku.com/zt/yulu/index.htm">设计语录</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/show/index.htm" class="tablink arwlink">设计分享</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/show/pingmian/index.htm">平面设计</a>
+            <a href="../../www.lanrentuku.com/show/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/show/mingpian/index.htm">名片设计</a>
+            <a href="../../www.lanrentuku.com/show/qita/index.htm">其他艺术</a>
+            <a href="../../www.lanrentuku.com/show/guanggao/index.htm">广告创意</a>
+            <a href="../../www.lanrentuku.com/show/biaozhi/index.htm">标志设计</a>
+            <a href="../../www.lanrentuku.com/show/huihua/index.htm">绘画艺术</a>
+            <a href="../../www.lanrentuku.com/show/chanpin/index.htm">产品设计</a>
+            <a href="../../www.lanrentuku.com/show/sheying/index.htm">摄影欣赏</a>
+            <a href="../../www.lanrentuku.com/show/jiaohu/index.htm">交互设计</a>
+            <a href="../../www.lanrentuku.com/show/shipin/index.htm">视频广告</a>
+	  </ul>
+  </li>
+  <li class="tab"><a href="../../bbs.lanrentuku.com/index.htm" class="tablink">懒人论坛</a></li>
+</div>
+<div id="ss">
+	<div class="yulu"><script>dy("yulu");</script></div>
+	<div class="search"><script>dysearch();</script></div>
+</div>
+<div id="topad">
+	<div class="top234x90"><script>dy("top234x90");</script></div>
+	<div class="top968x90"><script>dy("top960x90");</script></div>
+</div>
+<!--顶部结束-->
+
+<div id="l">
+	<div class="place">当前位置：<a href='../../www.lanrentuku.com/index.htm'>首页</a> > <a href='../index.htm'>用户体验</a> > <a href='index.htm'>设计思想</a> > </div>
+	<div class="title">
+	     <h1>Facebook的用户体验评判规则</h1><span><script>dy("bdshare");</script></span>
+		 <div class="zuozhe">来源/作者：标点符　类别：<a href="index.htm">设计思想</a>　字体大小：<a onclick="fontsize(1)" href="#">大</a>|<a onclick="fontsize(2)" href="#">中</a>|<a onclick="fontsize(3)" href="#">小</a>　背景颜色：<a onclick="backcolor(1)" href="#">蓝</a>|<a onclick="backcolor(2)" href="#">白</a>|<a onclick="backcolor(3)" href="#">灰</a>　<a href='10428.html' class='zuozhe' title='上一篇：Facebook Home设计的三个重要因素'>&laquo;</a> <a href='shejishi-10jianyi.html' class='zuozhe' title='下一篇：提高工作效率：给设计师的10条建议'>&raquo;</a></div>
+    </div><!-- /title -->
+	<div id="yuedu" class="content-a content-news">
+        <div class="ny336x280"><script>dy("ny336x280");</script></div>
+		<p><strong><strong>Facebook</strong>&nbsp;的产品设计五维</strong></p><p>情感</p><ol class=" list-paddingleft-2"><li><p>精准定位——设计对受众定位清晰，符合该设计目标用户群的使用体验。&nbsp;</p></li><li><p>亲和力——所有交互元素的设计上，用户对信息沟通顺畅，感觉似有人一般的亲和感。&nbsp;</p></li><li><p>分享——承载对Facebook连接、自由、生活的文化认同。&nbsp;</p></li><li><p>留恋度——给人超出想象的空间，让人留恋往返，对产品期待更多，得到二次访问。&nbsp;</p></li></ol><p>易用</p><ol class=" list-paddingleft-2"><li><p>反馈及时——在交互过程中，用户的操作能够在屏幕上及时得到反馈效果，帮助用户提高效率。&nbsp;</p></li><li><p>方位清晰——清晰的知道自己在那里，退路在那里，能够去那里。&nbsp;</p></li><li><p>路径简短——完成任务在尽可能控制在三步之内，完成某项任务所花废的步骤和时间最短最好。&nbsp;</p></li><li><p>容错性好——设计限制因素，突出正确操作，隐藏可能的错误操作，减少勿操作。&nbsp;</p></li></ol><p>形美</p><ol class=" list-paddingleft-2"><li><p>文字悦读——信息传达易读，符合中文阅读习惯，信息传达快速。&nbsp;</p></li><li><p>颜色合适——利用大众对颜色理解的寓意，使用正确的色彩加强产品的印象。&nbsp;</p></li><li><p>布局美观——均衡与对称的构图，使画面整体具有稳定性。&nbsp;</p></li><li><p>空间感强——运用几何透视的原理，设计中表现远近、层次、穿插等关系。&nbsp;</p></li></ol><p>气势</p><ol class=" list-paddingleft-2"><li><p>专业性——细节完美，找不到明显的设计瑕疵。&nbsp;</p></li><li><p>整体性——所有交互元素的设计上，用户对信息沟通顺畅，感觉似有人一般的亲和感。&nbsp;</p></li><li><p>品牌成分——体现Facebook品牌形象，并使品牌资产保持延续与统一。&nbsp;</p></li><li><p>惊喜度——局部设计有贴心且另人惊喜的体验。&nbsp;</p></li></ol><p>创新</p><ol class=" list-paddingleft-2"><li><p>共性——符合已知事物的普遍认知。&nbsp;</p></li><li><p>异性——在共性基础上，给人耳目一新的感受。&nbsp;</p></li><li><p>复制性——能够促进Facebook其它产品的发展。&nbsp;</p></li><li><p>颠覆性——在互联网上前所未见，能够变成同行业新的标准。&nbsp;</p></li></ol><p>以上的五维可以说是面面俱到，从逻辑上将可以很好的辨别一个功能和页面到底用户体验如何，基于这样的标准，接下来就是按照标准进行评价了，为了评分更加公正，可以进行内部评分和外部评分来进行区分来达到最好的效果。</p><p><strong>产品设计内部评审规则</strong></p><p>评价周期</p><ol class=" list-paddingleft-2"><li><p>每个设计师每个月被评审1次。&nbsp;</p></li><li><p>Team&nbsp;leader每周组织一次评审，提前通知设计师。&nbsp;</p></li></ol><p>人员组成</p><ol class=" list-paddingleft-2"><li><p>大评委1人(组织本次评审者，由产品设计主管担任)&nbsp;</p></li><li><p>评委4人以上（部门经理1&nbsp;人、主管1人、同事1人、其它。）&nbsp;</p></li><li><p>被评设计师&nbsp;</p></li></ol><p>评审流程</p><ol class=" list-paddingleft-2"><li><p>每次由被评设计师自行上报一个最近上线的作品。&nbsp;</p></li><li><p>会议形式，被评设计师向评委团进行设计理念简单介绍。&nbsp;</p></li><li><p>评委各自填写评审表，完成后交由大评委。&nbsp;</p></li><li><p>大评委对评审表进行数据计算，意见汇总，并制作评审报告。&nbsp;</p></li><li><p>组长负责每次新改版上线的用户数据收集。&nbsp;</p></li><li><p>保留好原始评审表，进行存档。&nbsp;</p></li><li><p>打印评审报告，并将评审意见告诉设计师，完成本次评审。&nbsp;</p></li></ol><p>打分规则</p><ol class=" list-paddingleft-2"><li><p>产品设计五大指标总共20条，每一条进行0-5分的打分，如果全部满意即为100分。&nbsp;</p></li><li><p>单条如果打5分，必须写出理由。打0-4分可以不写理由。&nbsp;</p></li><li><p>计分时，去掉一个最高分和一个最低分，剩下的分数相加后的平均即为最后得分。&nbsp;</p></li><li><p>根据线上用户调查数据和评委打分各占50%，最后得出该设计的最终得分。&nbsp;</p></li></ol><p><strong>产品设计外部评审规则</strong></p><p>线上用户调研也是用Facebook的产品设计五维去做，但不能用评委的版本，否则收集不到任何有用的信息。用户版只从情感、易用、形美、气势、创新五个大维度出题，不需要细化了，并且选项不能有任何引导性。而文字造成不要使用专业术语，用网友常用的网络用语就可以了。</p><p>产品设计用户在线调查问卷</p><p>1、您对新XXX的整体满意度如何？(情感)</p><p>A&nbsp;非常满意&nbsp;B&nbsp;比较满意&nbsp;C&nbsp;一般&nbsp;D&nbsp;比较不满意&nbsp;E&nbsp;非常不满意</p><p>2、您觉得XXX是否好看？(形美)</p><p>A&nbsp;漂亮，太棒了&nbsp;B&nbsp;还可&nbsp;C&nbsp;一般&nbsp;D&nbsp;有点难看&nbsp;E&nbsp;恶心，不想再看第二次</p><p>3、您认为XXX使用起来怎么样？(易用)</p><p>A&nbsp;更清晰了，方便使用&nbsp;B&nbsp;还可以&nbsp;C没什么感觉&nbsp;D不如原来方便&nbsp;E太费劲了</p><p>4、您认为新XXX功能怎么样？(气势)</p><p>A太棒了，我喜欢&nbsp;B还可以&nbsp;C一般&nbsp;D有点多余&nbsp;E完全多余的</p><p>5、您认为对新XXX的功能XXX怎么样？(创新)</p><p>A非常有用，太好了&nbsp;B比较有用&nbsp;C一般&nbsp;D不关注&nbsp;E对我没什么用</p><p>Facebook产品设计五维最终呈现给设计师的是图标化评审报告，不仅能知道设计师在团队中的水平，还能知道具体在那方面做的好，那方面有提高的空间，指导意义远远大于分数的意义。</p>	
+ 		<script type="text/javascript">
+			SyntaxHighlighter.highlight();
+        </script>
+        <div class="ny728x90"><script>dy("ny728x90");</script></div>
+        <div class="ny728x90"><script>dy("ny728x90-b");</script></div>
+        <div class="tag">标签：<a href='../../www.lanrentuku.com/sort/Facebook/index.htm'>Facebook</a><a href='../../www.lanrentuku.com/sort/%B2%FA%C6%B7%C9%E8%BC%C6/index.htm'>产品设计</a><a href='../../www.lanrentuku.com/sort/%D3%C3%BB%A7%CC%E5%D1%E9/index.htm'>用户体验</a></div>
+	</div><!-- /content -->
+	<div class="pinglun">
+		<div class="ds-thread"></div>
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"lanrentuku"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = '../../static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	</div>
+	<div class="lb468x15"><script>dy("lb468x15");</script></div>	
+	<div class="egg"><script>dy("egg");</script></div>	
+</div><!-- /l -->
+
+<div id="r">
+	<div class="nav-sub">
+		<dl>
+		<dt><span>用户体验</span><div></div><a href="../index.htm">全部&#8250;&#8250;</a></dt>
+			
+			<dd><a href='../ui/index.htm'>视觉设计</a></dd>
+			<dd><a href='../id/index.htm'>交互设计</a></dd>
+			<dd><a href='../ad/index.htm'>广告设计</a></dd><dd><a href='index.htm' class='on'>设计思想</a></dd>
+			<dd><a href='../ur/index.htm'>用户研究</a></dd>
+			<dd><a href='../wd/index.htm'>前端开发</a></dd>
+			<dd><a href='../pm/index.htm'>产品经理</a></dd>
+			<dd><a href='../doc/index.htm'>资源文档</a></dd>
+			<dd><a href='../123/index.htm'>网址导航</a></dd>
+            <dd><a href='../../www.lanrentuku.com/zt/yulu/index.htm' target="_blank">设计语录</a></dd>
+		</dl>	
+	</div>		
+	<div class="lb336x280"><script>dy("lb336x280_1");</script></div>		
+	<div class="h">
+		<dl>
+		<dt>猜你也喜欢看这些 ······ </dt>
+			<dd><a href="6397.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/301958255.jpg" alt="Google愉悦用户的十大准则" class="f"/></p>Google愉悦用户的十大准则<span class="l">设计思想</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="google-ued.html"><p><img src="../../img.lanrentuku.com/img/litimg/1205/211615055.jpg" alt="Google式用户体验的十大内在原则" class="f"/></p>Google式用户体验的十大内在原则<span class="l">设计思想</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="flipboar-tansheji.html"><p><img src="../../img.lanrentuku.com/img/litimg/1205/201033115.jpg" alt="Flipboard创始人谈设计、用户体" class="f"/></p>Flipboard创始人谈设计、用户体<span class="l">设计思想</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="instagramkuai.html"><p><img src="../../img.lanrentuku.com/img/litimg/1205/201014585.jpg" alt="Instagram速度快的秘密何在？" class="f"/></p>Instagram速度快的秘密何在？<span class="l">设计思想</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6406.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311317525.jpg" alt="回应“腾讯张小龙谈用户体验”那" class="f"/></p>回应“腾讯张小龙谈用户体验”那<span class="l">设计思想</span><span class="t">2012-08-30</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_2");</script></div>
+	<div class="h">
+		<dl>
+		<dt>这些是最新的 ······ </dt>
+			<dd><a href="shejishi-10jianyi.html"><p><img src="../../img.lanrentuku.com/img/allimg/1411/5-1411032105360-L.jpg" alt="提高工作效率：给设计师的10条建" class="f"/></p>提高工作效率：给设计师的10条建<span class="l">设计思想</span><span class="t">2014-11-03</span></a></dd>
+<dd><a href="facebook-yonghutiyan.html"><p><img src="../../img.lanrentuku.com/img/litimg/1304/181227475.jpg" alt="Facebook的用户体验评判规则" class="f"/></p>Facebook的用户体验评判规则<span class="l">设计思想</span><span class="t">2013-04-18</span></a></dd>
+<dd><a href="10428.html"><p><img src="../../img.lanrentuku.com/img/litimg/1304/121354225.jpg" alt="Facebook Home设计的三个重要因" class="f"/></p>Facebook Home设计的三个重要因<span class="l">设计思想</span><span class="t">2013-04-12</span></a></dd>
+<dd><a href="2013wangyeshejiqushi.html"><p><img src="../../img.lanrentuku.com/img/litimg/1303/271204385.jpg" alt="20个2013年最值得关注的网页设计" class="f"/></p>20个2013年最值得关注的网页设计<span class="l">设计思想</span><span class="t">2013-03-27</span></a></dd>
+<dd><a href="shejigoutong-7tiaojingyan.html"><p><img src="../../img.lanrentuku.com/img/litimg/1303/261246525.jpg" alt="设计沟通的七条经验" class="f"/></p>设计沟通的七条经验<span class="l">设计思想</span><span class="t">2013-03-26</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_3");</script></div>
+    <a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank"><img src="../../www.lanrentuku.com/img/images/x.gif" class="tqq" title="关注腾讯微博"/></a>
+</div><!-- /r -->
+	
+<!--底部开始-->
+<div id="footer">
+	<div class="about">
+		<dl>
+			<dt>关于</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/aboutus.html">关于我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/values.html">我们的价值观</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/event.html">大事记</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/copyright.html">版权声明</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/ad.html">广告服务</a></dd> 
+			 <dd><a href="../../www.lanrentuku.com/about/contactus.html">联系我们</a></dd>
+		</dl>
+		<dl>
+			<dt>帮助</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/help.html">常见问题</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/sitemap.html">网站地图</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/joinus.html">加入我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/tougao.html"><img src="../../img.lanrentuku.com/img/images/x.gif" class="minihot"/>网友投稿</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/links.php">友情链接</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/guestbook.html">在线留言</a></dd>
+		</dl>
+		<dl>
+			<dt>收藏</dt>
+			 <dd><a onclick="addToFavorite()">Ctrl+D收藏</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/shortcut.php">放到桌面</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/lanrentuku.zip">加入右键</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/rssmap.html">订阅rss</a></dd>
+		</dl>
+		<dl>
+			<dt>关注</dt>
+			 <dd><a href="../../weibo.com/u/2556500765/index.htm" target="_blank">新浪微博</a></dd>
+			 <dd><a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank">腾讯微博</a></dd>
+			 <dd><a href="../../511401068.qzone.qq.com/index.htm" target="_blank">qq空间</a></dd>
+			 <dd><a href="../../huaban.com/lanrentuku/index.htm" target="_blank">花瓣</a></dd>			 
+			 <dd><a href="../../blog.lanrentuku.com/index.htm" target="_blank">懒人博客</a></dd>
+			 <dd><a href="../../koubei.baidu.com/s/lanrentuku.com" target="_blank">百度口碑</a></dd>
+		</dl>
+    </div>
+	<div class="jinbu">
+		<dl>
+			<dt>我们一直在进步</dt>
+		     <script>dy("jinbu");</script>
+		</dl>
+    </div>
+	<span class="copyright">Copyright &copy; 2006-2015 <a href="../../www.lanrentuku.com/index.htm">lanrentuku.com</a> All Rights Reserved. Powered by <a href="../../www.dedecms.com/index.htm">DedeCMS_V57</a></span>
+	<span class="beian"><a href="../../www.miibeian.gov.cn/index.htm">京ICP备08001501号</a><a name="gobottom">&nbsp;</a></span>
+</div>
+<a title="返回顶部" class="top" href="#"></a>
+<!--底部结束-->
+</div><!-- /b -->
+<span style="display:none">
+	<script>dy("tj");</script>
+</span>
+</body>
+</html>

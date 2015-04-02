@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>简化输入—让网页表单更亲切_交互设计_懒人图库</title>
+<meta name="keywords" content="交互设计,表单设计,交互设计" />
+<meta name="description" content="大部分人不喜欢填表单，因为人们来到网站，主要目的不是填表，而是浏览或者购买。" />
+<link rel="stylesheet" type="text/css" href="../../img.lanrentuku.com/img/css/a.css">
+<script src="../../libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="../../img.lanrentuku.com/img/js/a.js"></script>
+<link rel="stylesheet" type="text/css" href="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css"/>
+<script type="text/javascript" charset="gbk" src="../../www.lanrentuku.com/include/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+</head>
+
+<body>
+<div class="topbg">
+	<div class="topnav">
+		<div class="l">欢迎来到懒人图库！</div>
+		<div class="r"><a href="../../www.lanrentuku.com/index.htm">返回首页</a> | <a onclick="addToFavorite()">收藏本站</a> | <a href="../../www.lanrentuku.com/about/sitemap.html"> 网站地图</a></div>
+	</div>
+</div>
+<div id="b">
+<!--顶部开始-->
+<div id="header">
+	<a href="../../www.lanrentuku.com/index.htm" class="logo"><img src="../../img.lanrentuku.com/img/images/logo.jpg" alt="懒人图库"/></a>
+	<span class="weibo"><script>dy("weibo");</script></span>
+</div>
+<div id=daohang>
+  <li class="tab home"><a href="../../www.lanrentuku.com/index.htm" class="tablink">首 页</a></li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/vector/index.htm" class="tablink arwlink">矢量素材</a>
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/vector/flower/index.htm">矢量花纹</a>
+	    <a href="../../www.lanrentuku.com/vector/classics/index.htm">经典实用</a>
+	    <a href="../../www.lanrentuku.com/vector/festival/index.htm">矢量节日</a>
+	    <a href="../../www.lanrentuku.com/vector/design/index.htm">广告设计</a>
+	    <a href="../../www.lanrentuku.com/vector/chinese_style/index.htm">矢量中国</a>
+	    <a href="../../www.lanrentuku.com/vector/icon/index.htm">矢量图标</a>
+	    <a href="../../www.lanrentuku.com/vector/trend/index.htm">矢量潮流</a>
+	    <a href="../../www.lanrentuku.com/vector/logo/index.htm">矢量标志</a>
+	    <a href="../../www.lanrentuku.com/vector/life/index.htm">生活百科</a>
+	    <a href="../../www.lanrentuku.com/vector/cartoon/index.htm">矢量卡通</a>
+	    <a href="../../www.lanrentuku.com/vector/people/index.htm">矢量人物</a>
+	    <a href="../../www.lanrentuku.com/vector/transport/index.htm">交通运输</a>
+	    <a href="../../www.lanrentuku.com/vector/animal/index.htm">矢量动物</a>
+	    <a href="../../www.lanrentuku.com/vector/plant/index.htm">矢量植物</a>
+	    <a href="../../www.lanrentuku.com/vector/landscape/index.htm">风景建筑</a>
+	    <a href="../../www.lanrentuku.com/vector/food_fruit/index.htm">食品果蔬</a>
+	    <a href="../../www.lanrentuku.com/vector/font/index.htm">矢量字体</a>
+	    <a href="../../www.lanrentuku.com/vector/background/index.htm">矢量背景</a>
+	    <a href="../../www.lanrentuku.com/vector/sport/index.htm">体育运动</a>
+	    <a href="../../www.lanrentuku.com/vector/other/index.htm">其他矢量</a>
+	  </ul>
+  </li>  
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/png/index.htm" class="tablink arwlink">PNG图标</a> 
+	  <ul class="subnav">
+	    <a href="../../www.lanrentuku.com/png/128x128.html">128x128</a>
+	    <a href="../../www.lanrentuku.com/png/256x256.html">256x256</a>
+	    <a href="../../www.lanrentuku.com/png/512x512.html">512x512</a>
+	    <a href="../../www.lanrentuku.com/png/32x32.html">32x32</a>
+	    <a href="../../www.lanrentuku.com/png/48x48.html">48x48</a>
+	    <a href="../../www.lanrentuku.com/png/64x64.html">64x64</a>
+	  </ul>
+  </li> 
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/js/index.htm" class="tablink arwlink">JS代码</a><div class="hot"></div>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/js/jiaodiantu.html">焦 点 图</a>
+		<a href="../../www.lanrentuku.com/js/quanping.html">全屏广告</a>
+		<a href="../../www.lanrentuku.com/js/duilian.html">对联广告</a>
+		<a href="../../www.lanrentuku.com/js/kefu.html">在线客服</a>
+		<a href="../../www.lanrentuku.com/js/xiangce.html">相册代码</a>
+		<a href="../../www.lanrentuku.com/js/daohang.html">菜单导航</a>
+		<a href="../../www.lanrentuku.com/js/biaoqian.html">TAB标签</a>
+		<a href="../../www.lanrentuku.com/js/piaofu.html">悬浮漂浮</a>
+		<a href="../../www.lanrentuku.com/js/shipin.html">视频播放</a>
+		<a href="../../www.lanrentuku.com/js/tupian.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/fanpai.html">翻牌书角</a>
+		<a href="../../www.lanrentuku.com/js/qita.html">其他代码</a>
+		<a href="../../www.lanrentuku.com/js/nav.html">导航菜单</a>
+		<a href="../../www.lanrentuku.com/js/form.html">表单按钮</a>
+		<a href="../../www.lanrentuku.com/js/text.html">文字特效</a>
+		<a href="../../www.lanrentuku.com/js/table.html">表格图层</a>
+		<a href="../../www.lanrentuku.com/js/picture.html">图片特效</a>
+		<a href="../../www.lanrentuku.com/js/date.html">时间日期</a>
+		<a href="../../www.lanrentuku.com/js/scroll.html">滚动代码</a>
+		<a href="../../www.lanrentuku.com/js/window.html">窗口特效</a>
+		<a href="../../www.lanrentuku.com/js/color.html">颜色背景</a>
+		<a href="../../www.lanrentuku.com/js/website.html">网站常用</a>
+		<a href="../../www.lanrentuku.com/js/css.html">CSS样式</a>
+		<a href="../../www.lanrentuku.com/js/other.html">其他特效</a> 			
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/psd/index.htm" class="tablink arwlink">PSD素材</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/psd/sheji/index.htm">设计元素</a>
+            <a href="../../www.lanrentuku.com/psd/wangye/index.htm">网页元素</a>
+            <a href="../../www.lanrentuku.com/psd/anniu/index.htm">按钮素材</a>
+            <a href="../../www.lanrentuku.com/psd/huawen/index.htm">花纹元素</a>
+            <a href="../../www.lanrentuku.com/psd/fangchan/index.htm">房产模板</a>
+            <a href="../../www.lanrentuku.com/psd/mingpian/index.htm">名片模板</a>
+            <a href="../../www.lanrentuku.com/psd/ziti/index.htm">字体设计</a>
+            <a href="../../www.lanrentuku.com/psd/tubiao/index.htm">图标设计</a>
+            <a href="../../www.lanrentuku.com/psd/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/psd/jiemian/index.htm">界面设计</a>
+            <a href="../../www.lanrentuku.com/psd/nianli/index.htm">年历台历</a>
+            <a href="../../www.lanrentuku.com/psd/zhongguo/index.htm">中国元素</a>
+            <a href="../../www.lanrentuku.com/psd/katong/index.htm">卡通素材</a>
+            <a href="../../www.lanrentuku.com/psd/renwu/index.htm">人物素材</a>
+            <a href="../../www.lanrentuku.com/psd/shenghuo/index.htm">生活百科</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/tupian/index.htm" class="tablink arwlink">图片素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/tupian/beijingtupian/index.htm">背景图片</a>
+		<a href="../../www.lanrentuku.com/tupian/renwutupian/index.htm">人物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/jingwutupian/index.htm">静物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/dongwutupian/index.htm">动物图片</a>
+		<a href="../../www.lanrentuku.com/tupian/zhiwutupian/index.htm">植物花卉</a>
+		<a href="../../www.lanrentuku.com/tupian/meishitupian/index.htm">美食图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shuiguotupian/index.htm">水果图片</a>
+		<a href="../../www.lanrentuku.com/tupian/shucaitupian/index.htm">蔬菜图片</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/lanren/index.htm" class="tablink arwlink">网页素材</a>
+	  <ul class="subnav">
+		<a href="../../www.lanrentuku.com/gif/index.htm">网页小图片</a>
+		<a href="../../www.lanrentuku.com/bg/index.htm">网页背景</a>
+		<a href="../../www.lanrentuku.com/software/index.htm">软件分享</a>
+		<a href="../../www.lanrentuku.com/qq/index.htm">QQ表情</a>
+		<a href="../../www.lanrentuku.com/news/index.htm">酷文分享</a>
+		<a href="../../tool.lanrentuku.com/index.htm">懒人工具箱</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../index.htm" class="tablink arwlink">用户体验</a><div class="new"></div>
+	  <ul class="subnav">
+			<a href="../ui/index.htm">视觉设计</a>
+			<a href="index.htm">交互设计</a>
+			<a href="../ad/index.htm">广告设计</a>
+			<a href="../di/index.htm">设计思想</a>
+			<a href="../ur/index.htm">用户研究</a>
+			<a href="../wd/index.htm">前端开发</a>
+			<a href="../pm/index.htm">产品经理</a>
+			<a href="../doc/index.htm">资源文档</a>
+			<a href="../123/index.htm">网址导航</a>
+			<a href="../../www.lanrentuku.com/zt/yulu/index.htm">设计语录</a>
+	  </ul>
+  </li>
+  <li class="tab dropdown"><a href="../../www.lanrentuku.com/show/index.htm" class="tablink arwlink">设计分享</a>
+	  <ul class="subnav">
+            <a href="../../www.lanrentuku.com/show/pingmian/index.htm">平面设计</a>
+            <a href="../../www.lanrentuku.com/show/baozhuang/index.htm">包装设计</a>
+            <a href="../../www.lanrentuku.com/show/mingpian/index.htm">名片设计</a>
+            <a href="../../www.lanrentuku.com/show/qita/index.htm">其他艺术</a>
+            <a href="../../www.lanrentuku.com/show/guanggao/index.htm">广告创意</a>
+            <a href="../../www.lanrentuku.com/show/biaozhi/index.htm">标志设计</a>
+            <a href="../../www.lanrentuku.com/show/huihua/index.htm">绘画艺术</a>
+            <a href="../../www.lanrentuku.com/show/chanpin/index.htm">产品设计</a>
+            <a href="../../www.lanrentuku.com/show/sheying/index.htm">摄影欣赏</a>
+            <a href="../../www.lanrentuku.com/show/jiaohu/index.htm">交互设计</a>
+            <a href="../../www.lanrentuku.com/show/shipin/index.htm">视频广告</a>
+	  </ul>
+  </li>
+  <li class="tab"><a href="../../bbs.lanrentuku.com/index.htm" class="tablink">懒人论坛</a></li>
+</div>
+<div id="ss">
+	<div class="yulu"><script>dy("yulu");</script></div>
+	<div class="search"><script>dysearch();</script></div>
+</div>
+<div id="topad">
+	<div class="top234x90"><script>dy("top234x90");</script></div>
+	<div class="top968x90"><script>dy("top960x90");</script></div>
+</div>
+<!--顶部结束-->
+
+<div id="l">
+	<div class="place">当前位置：<a href='../../www.lanrentuku.com/index.htm'>首页</a> > <a href='../index.htm'>用户体验</a> > <a href='index.htm'>交互设计</a> > </div>
+	<div class="title">
+	     <h1>简化输入—让网页表单更亲切</h1><span><script>dy("bdshare");</script></span>
+		 <div class="zuozhe">来源/作者：网易用户体验设计中心　类别：<a href="index.htm">交互设计</a>　字体大小：<a onclick="fontsize(1)" href="#">大</a>|<a onclick="fontsize(2)" href="#">中</a>|<a onclick="fontsize(3)" href="#">小</a>　背景颜色：<a onclick="backcolor(1)" href="#">蓝</a>|<a onclick="backcolor(2)" href="#">白</a>|<a onclick="backcolor(3)" href="#">灰</a>　<a href='6071.html' class='zuozhe' title='上一篇：设计中的Less和More'>&laquo;</a> <a href='6396.html' class='zuozhe' title='下一篇：向Google学习打造灵动的web体验'>&raquo;</a></div>
+    </div><!-- /title -->
+	<div id="yuedu" class="content-a content-news">
+        <div class="ny336x280"><script>dy("ny336x280");</script></div>
+		<p>大部分人不喜欢填表单，因为人们来到网站，主要目的不是填表，而是浏览或者购买。精心设计的表单，使输入变得流畅让人心情愉悦，而糟糕的设计让人扶墙吐血。那怎样才是优秀的表单呢?页面的布局、逻辑组织、视觉样式等都是值得关注的细节，其中简化输入是最近常被提及的，在这里我分享下自己工作中的心得&hellip;</p>
+<p><strong>1、</strong>更高大的输入框</p>
+<p>增加输入框高度，加粗字体，可以让网页上的输入框看起来更容易填写和阅读。随着电脑显示器尺寸变大，这样的输入框也显得更大气。</p>
+<p>&nbsp;<img border="0" alt="" width="404" height="87" src="../../img.lanrentuku.com/img/allimg/1203/312233326240-0.png" /></p>
+<p><strong>2、</strong>添加选取器。</p>
+<p>与其让人输入不如提供选择，选取内容只要点几下，就自动填充进输入框，不但可以减少输入障碍，还能预防出错。可以把任何希望的数据做成选取器，比如日期、颜色、地址或者历史记录等等。</p>
+<p>举个例子：前面的&ldquo;对方开户姓名&rdquo;输入框，需要填写对方的姓名，如果对方名字里有汉字不认识该怎么办呢?于是我们可以加上一个生僻字的选取器，如图：</p>
+<p>&nbsp;<img border="0" alt="" width="344" height="46" src="../../img.lanrentuku.com/img/allimg/1203/312233322P8-1.png" /></p>
+<p>打开字库，可以根据模糊读音选取汉字填入输入框。另外，姓名输入框有校验，选取完成后不要忘记对输入框内容进行再一次校验。</p>
+<p>&nbsp;<img border="0" alt="" width="581" height="84" src="../../img.lanrentuku.com/img/allimg/1203/312233323005-2.png" /></p>
+<p><strong>3、</strong>预置文字。</p>
+<p>采用预置文字来简化输入经常在手机上看到，现在在网页上也常使用。比如微博上发言的输入框，会保留你上一次未发出的内容，可以重新编辑。</p>
+<p>在网上也会看到把&ldquo;输入提示&rdquo;与&ldquo;预置文字&rdquo;混用。当然，你怎样称呼他们都是可以的，但要明白这是两种交互方式。输入提示的目的是指导填写的，聚焦输入框后文本消失;而预置文字是属于待修改的正式内容，字体样式应与正式输入的样式相同，聚焦后文本是不会消失的。</p>
+<p>当表单输入遇到选填与必填难以抉择时，考虑预置文字会是一个不错的折中方案。比如在一个申请付款的表单中，对用户来说主要需填写的是&ldquo;对方账号&rdquo;和&ldquo;付款金额&rdquo;，付款说明是一个选填项。但对系统来说，又必须采集付款说明，作为交易凭据之一，这个付款说明怎样处理呢?比较下面3个方式，显然复选框的方式不适合，因为用户若不填写我们就无法收集到数据，而输入提示的方式还是需要用户去填写，所以意义也不大。折中了业务和用户两方面，预置&ldquo;转账&rdquo;两字还是不错的，不想填写的人完全可以跳过它。</p>
+<p>&nbsp;<img border="0" alt="" width="446" height="164" src="../../img.lanrentuku.com/img/allimg/1203/3122333251L-3.png" /></p>
+<p><strong>4、</strong>设备读取。</p>
+<p>摄像头读取、语音输入&hellip;&hellip;最近，各种智能录入方式在手机上甚是流行，网页上也不甘心示弱，纷纷添加了这些功能~还有人脸识别，不知道不久后会不会流行起来呢?</p>
+<p><strong>5、</strong>设置输入属性。</p>
+<p>现在比较靠谱的还是Html5提供的一些表单类型属性。除了限制输入类型之外还有一些有意思的设置。拖放属性，可以从桌面上直接拖进相应的输入框里。在邮箱中拖入附件，若主题为空还可自动填写主题。而range和number属性，可以直接替换掉输入框，对数值输入很有用，在chrome里显示如图：</p>
+<p>&nbsp;<img border="0" alt="" width="338" height="87" src="../../img.lanrentuku.com/img/allimg/1203/312233323457-4.png" /></p>
+<p><strong>6、</strong>额外输入渐进展开</p>
+<p>当遇到需要增加高级或额外的选项时，可以采用即时添加删除的方式。不需要填写时，可以完全忽略，需要填写时点击一下就会显示。</p>
+<p>&nbsp;<img border="0" alt="" width="318" height="83" src="../../img.lanrentuku.com/img/allimg/1203/312233324644-5.png" /></p>
+<p><strong>7、</strong>利用输入反馈。</p>
+<p>除了校验填写是否正确，输入反馈也可以帮助简化用户填写，其中有不少窍门。</p>
+<p>比如在手机充值表单里，需要重复输入一遍号码才能确认提交。再重复输入一次，好像认定你肯定会出错。增加了号码归属地的反馈(配合历史记录)可以避免这种让人有点烦躁的方式。</p>
+<p>&nbsp;<img border="0" alt="" width="347" height="52" src="../../img.lanrentuku.com/img/allimg/1203/3122333261C-6.png" /></p>
+<p>下面这个例子将校验获得的推荐邮政编码填写到输入框中，让电脑变得更聪明一些。推荐的内容减少了思考和填写过程。</p>
+<p>&nbsp;<img border="0" alt="" width="254" height="75" src="../../img.lanrentuku.com/img/allimg/1203/312233322U7-7.png" /></p>
+<p>在反馈的显示方式上，也值得挑剔一下。比如数值输入框里被输入了字母，格式错误。如果对最简单的提供错误提示不满意，可以试试让输入的字母先显示1秒，然后即被删除，这样比单纯的限制输入类型要更容易理解。另外，还可以自动修改显示格式：号码输入完成后，自动增加空格，可以方便阅读。在需要强调时这样使用还可以提示用户进行检查，但是在普通的输入框中就不需要那么复杂了。</p>
+<p>&nbsp;<img border="0" alt="" width="427" height="50" src="../../img.lanrentuku.com/img/allimg/1203/312233322342-8.png" /></p>
+<p>给金额自动补全小数，比如下面的例子服务费是有小数的，自动补全金额的小数，可以消减顾虑，而且挺有趣。</p>
+<p>&nbsp;<img border="0" alt="" width="233" height="85" src="../../img.lanrentuku.com/img/allimg/1203/3122333260D-9.png" /></p>
+<p>讲到这里，您是否对看似普通的表单设计产生了兴趣呢?输入框是最基础的人机交互，每个人都有不同的理解，以上抛砖引玉，感谢您的阅读，期待更多的分享和探讨!</p>	
+ 		<script type="text/javascript">
+			SyntaxHighlighter.highlight();
+        </script>
+        <div class="ny728x90"><script>dy("ny728x90");</script></div>
+        <div class="ny728x90"><script>dy("ny728x90-b");</script></div>
+        <div class="tag">标签：<a href='../../www.lanrentuku.com/sort/%BD%BB%BB%A5%C9%E8%BC%C6/index.htm'>交互设计</a><a href='../../www.lanrentuku.com/sort/%B1%ED%B5%A5%C9%E8%BC%C6/index.htm'>表单设计</a></div>
+	</div><!-- /content -->
+	<div class="pinglun">
+		<div class="ds-thread"></div>
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"lanrentuku"};
+		(function() {
+			var ds = document.createElement('script');
+			ds.type = 'text/javascript';ds.async = true;
+			ds.src = '../../static.duoshuo.com/embed.js';
+			ds.charset = 'UTF-8';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+		})();
+		</script>
+	</div>
+	<div class="lb468x15"><script>dy("lb468x15");</script></div>	
+	<div class="egg"><script>dy("egg");</script></div>	
+</div><!-- /l -->
+
+<div id="r">
+	<div class="nav-sub">
+		<dl>
+		<dt><span>用户体验</span><div></div><a href="../index.htm">全部&#8250;&#8250;</a></dt>
+			
+			<dd><a href='../ui/index.htm'>视觉设计</a></dd><dd><a href='index.htm' class='on'>交互设计</a></dd>
+			<dd><a href='../ad/index.htm'>广告设计</a></dd>
+			<dd><a href='../di/index.htm'>设计思想</a></dd>
+			<dd><a href='../ur/index.htm'>用户研究</a></dd>
+			<dd><a href='../wd/index.htm'>前端开发</a></dd>
+			<dd><a href='../pm/index.htm'>产品经理</a></dd>
+			<dd><a href='../doc/index.htm'>资源文档</a></dd>
+			<dd><a href='../123/index.htm'>网址导航</a></dd>
+            <dd><a href='../../www.lanrentuku.com/zt/yulu/index.htm' target="_blank">设计语录</a></dd>
+		</dl>	
+	</div>		
+	<div class="lb336x280"><script>dy("lb336x280_1");</script></div>		
+	<div class="h">
+		<dl>
+		<dt>猜你也喜欢看这些 ······ </dt>
+			<dd><a href="6071.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311337025.jpg" alt="设计中的Less和More" class="f"/></p>设计中的Less和More<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6382.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311329425.jpg" alt="简化输入—让网页表单更亲切" class="f"/></p>简化输入—让网页表单更亲切<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6396.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/302006015.jpg" alt="向Google学习打造灵动的web体验" class="f"/></p>向Google学习打造灵动的web体验<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="liaojiejiaohusheji.html"><p><img src="../../img.lanrentuku.com/img/litimg/1205/200946505.jpg" alt="交互设计入门（1）了解交互设计" class="f"/></p>交互设计入门（1）了解交互设计<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6404.html"><p><img src="../../img.lanrentuku.com/img/litimg/1205/200952355.jpg" alt="交互设计入门（2）交互设计的职" class="f"/></p>交互设计入门（2）交互设计的职<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_2");</script></div>
+	<div class="h">
+		<dl>
+		<dt>这些是最新的 ······ </dt>
+			<dd><a href="amazon-nemu.html"><p><img src="../../img.lanrentuku.com/img/litimg/1303/261212075.jpg" alt="揭秘Amazon反应速度超快的下拉菜" class="f"/></p>揭秘Amazon反应速度超快的下拉菜<span class="l">交互设计</span><span class="t">2013-03-26</span></a></dd>
+<dd><a href="qingsheji.html"><p><img src="../../img.lanrentuku.com/img/litimg/1212/011750035.jpg" alt="轻设计，让网站灵敏轻便的6个技" class="f"/></p>轻设计，让网站灵敏轻便的6个技<span class="l">交互设计</span><span class="t">2012-12-01</span></a></dd>
+<dd><a href="6071.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311337025.jpg" alt="设计中的Less和More" class="f"/></p>设计中的Less和More<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6382.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/311329425.jpg" alt="简化输入—让网页表单更亲切" class="f"/></p>简化输入—让网页表单更亲切<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+<dd><a href="6396.html"><p><img src="../../img.lanrentuku.com/img/litimg/1208/302006015.jpg" alt="向Google学习打造灵动的web体验" class="f"/></p>向Google学习打造灵动的web体验<span class="l">交互设计</span><span class="t">2012-08-30</span></a></dd>
+
+		</dl>	
+	</div>
+	<div class="lb336x280"><script>dy("lb336x280_3");</script></div>
+    <a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank"><img src="../../www.lanrentuku.com/img/images/x.gif" class="tqq" title="关注腾讯微博"/></a>
+</div><!-- /r -->
+	
+<!--底部开始-->
+<div id="footer">
+	<div class="about">
+		<dl>
+			<dt>关于</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/aboutus.html">关于我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/values.html">我们的价值观</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/event.html">大事记</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/copyright.html">版权声明</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/ad.html">广告服务</a></dd> 
+			 <dd><a href="../../www.lanrentuku.com/about/contactus.html">联系我们</a></dd>
+		</dl>
+		<dl>
+			<dt>帮助</dt>
+			 <dd><a href="../../www.lanrentuku.com/about/help.html">常见问题</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/sitemap.html">网站地图</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/joinus.html">加入我们</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/tougao.html"><img src="../../img.lanrentuku.com/img/images/x.gif" class="minihot"/>网友投稿</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/links.php">友情链接</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/guestbook.html">在线留言</a></dd>
+		</dl>
+		<dl>
+			<dt>收藏</dt>
+			 <dd><a onclick="addToFavorite()">Ctrl+D收藏</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/shortcut.php">放到桌面</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/lanrentuku.zip">加入右键</a></dd>
+			 <dd><a href="../../www.lanrentuku.com/about/rssmap.html">订阅rss</a></dd>
+		</dl>
+		<dl>
+			<dt>关注</dt>
+			 <dd><a href="../../weibo.com/u/2556500765/index.htm" target="_blank">新浪微博</a></dd>
+			 <dd><a href="../../t.qq.com/lanrentuku_com/index.htm" target="_blank">腾讯微博</a></dd>
+			 <dd><a href="../../511401068.qzone.qq.com/index.htm" target="_blank">qq空间</a></dd>
+			 <dd><a href="../../huaban.com/lanrentuku/index.htm" target="_blank">花瓣</a></dd>			 
+			 <dd><a href="../../blog.lanrentuku.com/index.htm" target="_blank">懒人博客</a></dd>
+			 <dd><a href="../../koubei.baidu.com/s/lanrentuku.com" target="_blank">百度口碑</a></dd>
+		</dl>
+    </div>
+	<div class="jinbu">
+		<dl>
+			<dt>我们一直在进步</dt>
+		     <script>dy("jinbu");</script>
+		</dl>
+    </div>
+	<span class="copyright">Copyright &copy; 2006-2015 <a href="../../www.lanrentuku.com/index.htm">lanrentuku.com</a> All Rights Reserved. Powered by <a href="../../www.dedecms.com/index.htm">DedeCMS_V57</a></span>
+	<span class="beian"><a href="../../www.miibeian.gov.cn/index.htm">京ICP备08001501号</a><a name="gobottom">&nbsp;</a></span>
+</div>
+<a title="返回顶部" class="top" href="#"></a>
+<!--底部结束-->
+</div><!-- /b -->
+<span style="display:none">
+	<script>dy("tj");</script>
+</span>
+</body>
+</html>

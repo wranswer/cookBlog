@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+	<title>归档 - 懒人图库</title>
+	<meta name="keywords" content="归档 - 懒人图库"/>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="ie=emulateie7"/>
+<link rel="shortcut icon" type="image/x-icon" href="../../imgsize.ph.126.net/query_59E24CC3">
+<meta name="author" content="netease"/>
+<meta name="version" content="1.0"/>
+<meta name="description" content="懒人图库的日志 - LOFTER"/>
+  <script type="text/javascript">
+   (function(window,document){
+        
+        document.uniqueID!=document.uniqueID&&!!location.hash&&(location.hash=location.hash);
+        window.focus();
+    })(this,document);
+  </script>
+<link href="../../l.bst.126.net/s/pt_lib_macro_649698D3.css" type="text/css" rel="stylesheet"/>
+<link href="../../l.bst.126.net/s/pt_page_archive_22D73F35.css" type="text/css" rel="stylesheet"/>
+<style>
+.g-bdfull .g-bdc,.g-bdfull .g-sd,.g-bdfull .m-showsd,.g-bdfull .m-showsd .w-arrowt2{transition:0.3s}
+</style>
+</head>
+<body class="p-body10 p-body10-fix">
+<div class="g-hdfull">
+<div class="g-hd g-hd-auto">
+	<h1 class="w-bttl2 w-bttl-hd">
+    	<a href="../../lanrentuku.lofter.com/index.htm"><img src="../../img9.ph.126.net/query_E3B70FC9"></a>
+        <a href="../../lanrentuku.lofter.com/index.htm">懒人图库</a>
+    </h1>
+
+    <iframe id="control_frame" width="390px" scrolling="no" height="32px" frameborder="0" src="../../www.lofter.com/control_46B0EC84" style="position: fixed; clear: both; width: 390px; height: 32px; z-index: 1337; top: 5px; right: 15px; border: 0px none; background-color: transparent; overflow: hidden;" allowtransparency="true"></iframe>
+</div>
+</div>
+<div class="g-bdfull g-bdfull-show ztag">
+	<div class="g-bdc ztag">
+    	<div class="m-showsd" ><a href="#" class="w-arrowt2 ztag"></a></div>
+        <div class="m-fbar f-cb">
+            <div class="schbtn f-cb">
+            	<div class="btnitm" style="display:none;">
+                    <a href="#" class="w-schbtn2 ztag">文章</a>
+                    <div class="m-txtsch phide ztag">
+                    	<div class="txt"><a href="#" class="currt ztag">文章(<span>6</span>)</a><a class="ztag phide" href="#">喜欢(<span>0</span>)</a> <a class="ztag phide" href="#">推荐(<span>0</span>)</a></div>
+                        <div class="arrow"></div>
+                    </div>
+              	</div>
+                <div class="btnitm">
+                    <a rel="nofollow" href="#" class="w-schbtn2 ztag">日期</a>
+                    <div class="m-calendar phide ztag">
+                    </div>
+                </div>
+                <div class="btnitm ztag">
+                    <a rel="nofollow" href="#" class="w-schbtn2 ztag">标签</a>
+                    <div class="m-tagsch phide ztag">
+                        <div class="tbox ztag">
+	                        	<div style="text-align:center;">没有标签</div>
+                        </div>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-fsch ">
+                <form action="../search/index.htm">
+                    <input type="text" name="q" value="搜索文章" class="s-fc2 ztag">
+                    <button type="submit" class="ztag">&nbsp;</button>
+                </form>
+            </div>
+        </div>
+        <div class="ztag">
+		</div>
+    </div>
+    <div class="g-sd ztag" >
+    	<div class="f-cb">
+            <div class="m-imglist">
+                <h3 class="w-ttl2">
+					
+                    <span>关注</span>
+                </h3>
+                <ul>
+                    <li><a target="_blank" href="../../www.lofter.com/explore_C5033729"><img src="../../img0.ph.126.net/query_91FD588B"></a></li>
+                    <li><a target="_blank" href="../../www.lofter.com/explore_0A20E0FB"><img src="../../img2.ph.126.net/query_A46EED91"></a></li>
+                    <li><a target="_blank" href="../../www.lofter.com/explore_5B0855C6"><img src="../../img.ph.126.net/query_83230DB4"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>
+  <div style="display:none;"  class="fa-init">  <textarea rows="1" cols="1" name="jst" id="m-archive-jst-0">		<div class="y">${archive.year}</div>
+        <ul class="m ztag">
+            {list archive.monthCount as x}
+				<li {if x==0}class="empty"{else}onclick="loft.m.g.selectTime(${archive.year}, ${x_index})"{/if}><a><em>${x_index+1}月</em>{if x>0}<small>${x}</small>{/if}</a></li>
+			{/list}
+        </ul>
+        {if nextYear>=0}<div id="year_before_" class="before" onclick="loft.m.g.selectYear(${nextYear});"></div>{/if}
+		{if prevYear>=0}<div id="year_next_" class="next" onclick="loft.m.g.selectYear(${prevYear});"></div>{/if}
+		<div class="arrow"></div>
+</textarea>
+  <textarea rows="1" cols="1" name="jst" id="m-archive-jst-1">		<div class="m-filecnt m-filecnt-1">
+    		<h2><em>{if curyear!=year}${year}年{/if}${month+1}月</em>/<small class="ctag-0 {if count<=0}phide{/if}">${count}篇文章</small></h2>
+			<ul class="list ctag-0" id="${year}_${month}_list">
+			</ul>
+    	</div>
+</textarea>
+  <textarea rows="1" cols="1" name="jst" id="m-archive-jst-2">		<li id="${post.id}" style="display:none" class="{if post.type==2}img{elseif post.type==3}music{elseif post.type==4}movie{else}text{/if}">
+			<a href="../post/${post.values.permalink}" target="_blank">
+				{if post.type!=1}
+					{if post.values.imgurl!=null}
+						<div class="imgwrap">
+							<div class="imgwrap2">
+								<img class="stubimg ztag-0" src="{if post.type==3&&location.hostname.indexOf('.lofter.com')<=0}http://imgsize.ph.126.net/?imgurl=${post.values.imgurl}_500x500x0.jpg{else}${post.values.imgurl}{/if}"/>
+								<img class="realimg ztag-0" src="{if post.type==3&&location.hostname.indexOf('.lofter.com')<=0}http://imgsize.ph.126.net/?imgurl=${post.values.imgurl}_500x500x0.jpg{else}${post.values.imgurl}{/if}"/>
+							</div>
+						</div>
+					{/if}
+				{else}
+					<h3>${post.values.title|escape}</h3><p>${post.values.content|escape}</p>
+				{/if}
+				<span class="type"></span>
+				<span class="info"><em>${post.month+1}月${post.dayOfMonth}日</em>{if post.noteCount>0}<small>${post.noteCount}热度</small>{/if}</span>
+			</a>
+		</li>
+</textarea>
+  <textarea rows="1" cols="1" name="jst" id="m-archive-jst-3">		<div class="m-filecnt" id="${year}_${month}_wrapper">
+    		<h2><em>{if curyear!=year}${year}年{/if}${month+1}月</em><small class="ctag-0 phide">${count}篇文章</small></h2>
+			<ul class="list ctag-0" id="${year}_${month}_list">
+			</ul>
+    	</div>
+</textarea>
+	  <textarea rows="1" cols="1" name="js" >this.p={currentYear:2015,index:1,isMainBlog:true,currentTime:1427958477788,blogInfo:{"blogId":329027,"blogName":"lanrentuku"},archives:{"2":[{"year":2015,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2014,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2013,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2012,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2011,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]}],"1":[{"year":2015,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2014,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2013,"monthCount":[1,0,3,0,0,0,2,0,0,0,0,0]},{"year":2012,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2011,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]}],"6":[{"year":2015,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2014,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2013,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2012,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]},{"year":2011,"monthCount":[0,0,0,0,0,0,0,0,0,0,0,0]}]},likecnt:0,sharecnt:0,postcnt:6};</textarea>
+
+</div>
+<script type="text/javascript">
+
+location.dwr='../../www.lofter.com/dwr/index.htm';
+location.hosturl = '../../www.lofter.com';
+location.dirhost = '../../l.bst.126.net';
+location.cloudMusicFlashUrl = '../../s1.music.126.net/style/swf/LofterMusicPlayer_F2FA70D9.swf';
+
+location.f110 = '../../l.bst.126.net/rsc/img/ava/110.png';
+location.blogBaseUrl = '../../lanrentuku.lofter.com';
+
+Date.servTime = '04/02/2015 15:07:57';
+
+window.CF = {
+debugMode:false,
+testDBMode:false,
+devSourceMode:false,
+visitor:{userId:0,mainBlogId:0}
+,crm:true
+};
+window.CF.visitor.visitorEmail = '';
+
+
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-31007899-1'],['_setLocalGifPath', '/UA-31007899-1/__utm.gif'],['_setLocalRemoteServerMode']);
+_gaq.push(['_setDomainName', 'lofter.com']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var loadgajs = function(){
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = '../../wr.da.netease.com/ga.js';
+
+var _handler = function(){
+if(!_handler.isExeced){
+_handler.isExeced = true;
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+}
+};
+
+if (!!document.addEventListener) {
+document.body.addEventListener('load',_handler, false);
+} else{
+document.body.attachEvent('onload',_handler);
+}
+
+setTimeout(_handler,8000);
+};
+
+setTimeout(loadgajs,500);
+
+})();
+</script><script src="../../l.bst.126.net/s/core_374065C2.js" type="text/javascript"></script><script src="../../l.bst.126.net/s/pt_page_archive_08F72013.js" type="text/javascript"></script>
+</body>
+</html>
